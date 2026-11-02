@@ -1,0 +1,104 @@
+{
+  "attacks": {
+    "enabled": false,
+    "profile": "none"
+  },
+  "experiment": {
+    "duration_s": 100.0,
+    "id": "coupled_safety",
+    "run_id": "20261030T180325Z_coupled_safety_A14_ORCA_n6_s17501",
+    "seed": 17501
+  },
+  "formation": {
+    "neighbor_radius_m": 12.0,
+    "spacing_m": 6.0,
+    "state_timeout_s": 0.5,
+    "type": "triangular_lattice"
+  },
+  "geometry": {
+    "desired_offsets": {
+      "0": [
+        -7.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "1": [
+        -1.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "2": [
+        4.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "3": [
+        -4.5,
+        2.598076211353316,
+        0.0
+      ],
+      "4": [
+        1.5,
+        2.598076211353316,
+        0.0
+      ],
+      "5": [
+        6.0,
+        -2.378864668406422e-05,
+        0.0
+      ]
+    },
+    "spawn_positions": {
+      "0": [
+        -7.6436,
+        -2.457676211353316,
+        0.0
+      ],
+      "1": [
+        -1.3376000000000001,
+        -2.439876211353316,
+        0.0
+      ],
+      "2": [
+        4.5486,
+        -2.454976211353316,
+        0.0
+      ],
+      "3": [
+        -4.5571,
+        2.493876211353316,
+        0.0
+      ],
+      "4": [
+        1.5313,
+        2.710176211353316,
+        0.0
+      ],
+      "5": [
+        5.8821,
+        -0.2164237886466842,
+        0.0
+      ]
+    }
+  },
+  "git": {
+    "commit": "",
+    "dirty": false
+  },
+  "learning": {
+    "mode": "classical"
+  },
+  "network": {
+    "backend": "ral26_fanet",
+    "emulation": "ral26"
+  },
+  "processes": {},
+  "run_id": "20261030T180325Z_coupled_safety_A14_ORCA_n6_s17501",
+  "swarm": {
+    "altitude_m": 5.0,
+    "autostart": 4001,
+    "model": "gz_x500",
+    "num_uavs": 6,
+    "spawn_scale": 1.0
+  }
+}

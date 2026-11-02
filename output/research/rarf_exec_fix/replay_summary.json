@@ -1,0 +1,41 @@
+{
+ "violations_total": 309,
+ "by_set": {
+  "E1": 13,
+  "E3": 5,
+  "E5": 274,
+  "dev": 2,
+  "exp1": 14,
+  "exp2": 1
+ },
+ "by_set_in_window": {
+  "E1": 13,
+  "E3": 5,
+  "E5": 274,
+  "dev": 2,
+  "exp1": 14,
+  "exp2": 1
+ },
+ "by_cause": {
+  "onset": 137,
+  "both": 94,
+  "release": 78
+ },
+ "archived_json": 287,
+ "archived_matched": 287,
+ "archived_unmatched": [],
+ "max_selected_jump": 0.4010049875001556,
+ "max_sent_jump": 3.0249226436390075,
+ "max_v1_reproduction_err": 0.0013346130253976682,
+ "v2_open_loop_max_jump": 0.4000000670649712,
+ "v2_open_loop_all_in_X": true,
+ "v2_exact_spd_cases": 7,
+ "spd_v1_policy_err_max": 0.001586301686827834,
+ "v2_exact_max_jump": 0.4000000657301591,
+ "status_at_violation": {
+  "UNCERTIFIED": 290,
+  "NO_FILTER": 12,
+  "FALLBACK_FORCED": 4,
+  "UNCERTIFIED_POSTCLIP": 3
+ }
+}

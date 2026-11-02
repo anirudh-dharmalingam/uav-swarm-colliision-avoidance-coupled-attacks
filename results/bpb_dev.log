@@ -1,0 +1,59 @@
+pb_dev 72 episodes; 72 to run
+{
+ "SBC": {
+  "selected": "S3",
+  "params": {
+   "Ds": 3.0,
+   "gamma": 1.0,
+   "responsibility": 1.0
+  },
+  "rule": "none eligible: most routes, ties by mean min_sep_ha",
+  "dev": {
+   "S1": {
+    "n": 12,
+    "routes": 9,
+    "crash": 3,
+    "mean_min_sep_ha": 1.5907736625351363
+   },
+   "S2": {
+    "n": 12,
+    "routes": 10,
+    "crash": 2,
+    "mean_min_sep_ha": 1.5971146436035948
+   },
+   "S3": {
+    "n": 12,
+    "routes": 11,
+    "crash": 1,
+    "mean_min_sep_ha": 1.6952560966676773
+   }
+  }
+ },
+ "BVC": {
+  "selected": "V3",
+  "params": {
+   "r_s": 1.5
+  },
+  "rule": "none eligible: most routes, ties by mean min_sep_ha",
+  "dev": {
+   "V1": {
+    "n": 12,
+    "routes": 10,
+    "crash": 2,
+    "mean_min_sep_ha": 1.6005881288729455
+   },
+   "V2": {
+    "n": 12,
+    "routes": 10,
+    "crash": 2,
+    "mean_min_sep_ha": 1.6700765597817624
+   },
+   "V3": {
+    "n": 12,
+    "routes": 11,
+    "crash": 1,
+    "mean_min_sep_ha": 2.0507054767010433
+   }
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "status": "FROZEN VALUES (see PREREG.md): T_net_max = ceil_0.05(1.15 x max dev end-to-end transit 0.123 s) = 0.15; adverse = 0.12 channel + 0.15 middleware allowance = 0.27",
+ "bounds": {
+  "envelope": "sound_age",
+  "U": 3.0,
+  "W": 2.95,
+  "A_honest": 6.2,
+  "A_any": 8.8,
+  "beta_p": 1.25,
+  "beta_v": 0.5,
+  "T_net_max": 0.15,
+  "ego_err_p": 0.4,
+  "ego_err_v": 1.1,
+  "sender_err_p": 0.4,
+  "sender_err_v": 1.1,
+  "d_safe": 1.5,
+  "h": 0.4,
+  "M": 8,
+  "slew": 0.4,
+  "T_net_max_adverse": 0.27
+ },
+ "calibration": "output/research/coupled_safety_v1/calibration/calibration_bounds_pooled_rule.json (declared_pooled_rule; fresh holdout2 0 exceedances)"
+}

@@ -1,0 +1,39 @@
+pb_adaptive_search 168 episodes; 168 to run
+it 0 SBC: best 0.765  mean-cand 1.798  A14 1.798
+it 0 BVC: best 0.762  mean-cand 1.924  A14 1.924
+pb_adaptive_search 168 episodes; 168 to run
+it 1 SBC: best 0.764  mean-cand 0.766  A14 1.857
+it 1 BVC: best 0.761  mean-cand 0.766  A14 2.271
+pb_adaptive_search 168 episodes; 168 to run
+it 2 SBC: best 0.763  mean-cand 0.764  A14 1.828
+it 2 BVC: best 0.758  mean-cand 0.765  A14 2.232
+pb_adaptive_search 168 episodes; 168 to run
+it 3 SBC: best 0.764  mean-cand 0.766  A14 1.873
+it 3 BVC: best 0.757  mean-cand 0.761  A14 2.215
+pb_adaptive_search 168 episodes; 168 to run
+it 4 SBC: best 0.763  mean-cand 0.766  A14 1.799
+it 4 BVC: best 0.758  mean-cand 0.762  A14 2.128
+pb_adaptive_search 168 episodes; 168 to run
+it 5 SBC: best 0.761  mean-cand 0.766  A14 1.785
+it 5 BVC: best 0.758  mean-cand 0.761  A14 2.089
+pb_adaptive_select 72 episodes; 72 to run
+{
+ "SBC": {
+  "select_score": 0.7648107488843595,
+  "select_scores_top3": [
+   0.7648107488843595,
+   0.7653947269637968,
+   0.7665286234144192
+  ],
+  "search_score": 0.7606782087963831
+ },
+ "BVC": {
+  "select_score": 0.7581694146639056,
+  "select_scores_top3": [
+   0.7616120684557921,
+   0.7581694146639056,
+   0.7616622885712858
+  ],
+  "search_score": 0.757619159591985
+ }
+}

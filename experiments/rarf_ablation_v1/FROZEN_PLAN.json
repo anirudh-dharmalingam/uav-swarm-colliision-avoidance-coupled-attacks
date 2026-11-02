@@ -1,0 +1,62 @@
+{
+ "frozen_at": "2026-10-28 18:18:58",
+ "speed_rule_label": "SPDb",
+ "speed_rule": {
+  "d_slow": 5.0,
+  "d_stop": 2.5,
+  "v_slow": 0.8,
+  "v_near": 0.0,
+  "k": 2.0
+ },
+ "speed_rule_why": "none eligible: most completions, tie by min_sep",
+ "speed_candidates_dev": {
+  "SPDa": {
+   "n": 12,
+   "route_complete": 11,
+   "crash": 1,
+   "mean_min_sep_ha": 1.5633570463808357,
+   "min_min_sep_ha": 0.1853375299285063,
+   "viol15": 6,
+   "eligible": false
+  },
+  "SPDb": {
+   "n": 12,
+   "route_complete": 11,
+   "crash": 1,
+   "mean_min_sep_ha": 1.6935525432063887,
+   "min_min_sep_ha": 0.4085939304492909,
+   "viol15": 5,
+   "eligible": false
+  },
+  "SPDc": {
+   "n": 12,
+   "route_complete": 10,
+   "crash": 2,
+   "mean_min_sep_ha": 1.609122562400349,
+   "min_min_sep_ha": 0.4184805849737833,
+   "viol15": 4,
+   "eligible": false
+  }
+ },
+ "sample_size": {
+  "dev_D1_per_scenario": {
+   "17000": 0.0141,
+   "17001": -0.0775,
+   "17002": 0.0677,
+   "17003": 0.0085
+  },
+  "sd_D1": 0.060084607139667026,
+  "sd_RARF_minus_NOM": 0.02357944967299281,
+  "s_star": 0.1,
+  "n_halfwidth_0.10": 4,
+  "n_power80_delta0.25": 2,
+  "clamp": [
+   12,
+   30
+  ],
+  "N": 12,
+  "below_precision_target": false
+ },
+ "n_scenarios": 12,
+ "dev_episodes_valid": 72
+}

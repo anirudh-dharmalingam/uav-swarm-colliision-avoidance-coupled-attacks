@@ -1,0 +1,104 @@
+{
+  "attacks": {
+    "enabled": false,
+    "profile": "none"
+  },
+  "experiment": {
+    "duration_s": 100.0,
+    "id": "coupled_safety",
+    "run_id": "20261030T191659Z_coupled_safety_A14_D24R_FF_n6_s17503",
+    "seed": 17503
+  },
+  "formation": {
+    "neighbor_radius_m": 12.0,
+    "spacing_m": 6.0,
+    "state_timeout_s": 0.5,
+    "type": "triangular_lattice"
+  },
+  "geometry": {
+    "desired_offsets": {
+      "0": [
+        -4.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "1": [
+        -1.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "2": [
+        4.5,
+        -2.598076211353316,
+        0.0
+      ],
+      "3": [
+        -4.5,
+        2.598076211353316,
+        0.0
+      ],
+      "4": [
+        1.5,
+        2.598076211353316,
+        0.0
+      ],
+      "5": [
+        7.5,
+        2.598076211353316,
+        0.0
+      ]
+    },
+    "spawn_positions": {
+      "0": [
+        -4.6925,
+        -2.508976211353316,
+        0.0
+      ],
+      "1": [
+        -1.5259,
+        -2.358176211353316,
+        0.0
+      ],
+      "2": [
+        4.3689,
+        -2.484976211353316,
+        0.0
+      ],
+      "3": [
+        -4.3485,
+        2.782276211353316,
+        0.0
+      ],
+      "4": [
+        1.3777,
+        2.469076211353316,
+        0.0
+      ],
+      "5": [
+        7.6272,
+        2.510776211353316,
+        0.0
+      ]
+    }
+  },
+  "git": {
+    "commit": "",
+    "dirty": false
+  },
+  "learning": {
+    "mode": "classical"
+  },
+  "network": {
+    "backend": "ral26_fanet",
+    "emulation": "ral26"
+  },
+  "processes": {},
+  "run_id": "20261030T191659Z_coupled_safety_A14_D24R_FF_n6_s17503",
+  "swarm": {
+    "altitude_m": 5.0,
+    "autostart": 4001,
+    "model": "gz_x500",
+    "num_uavs": 6,
+    "spawn_scale": 1.0
+  }
+}

@@ -1,0 +1,78 @@
+{
+ "yard_m": [
+  60,
+  40
+ ],
+ "altitude_m": 5.0,
+ "swept_envelope_xyxy": [
+  -10.75,
+  34.75,
+  -14.056559651169366,
+  14.056559651169366
+ ],
+ "min_clearance_to_collidable_m": 4.0,
+ "required_clearance_m": 4.0,
+ "collidable_models": [
+  "hangar_N0",
+  "hangar_N1",
+  "hangar_N2",
+  "rack_S0",
+  "rack_S1",
+  "rack_S2",
+  "rack_S3",
+  "fence_E",
+  "fence_W"
+ ],
+ "overlays": {
+  "yard_h-20.sdf": {
+   "heading_deg": -20.0,
+   "lateral_span_m": 10.013088237981274,
+   "outer_width_m": 14.013088237981274,
+   "middle_third_width_m": 12.010470590385019,
+   "physics_collision_equivalent": true,
+   "overlay_collision_elements": 0,
+   "video_world": "video_h-20.sdf",
+   "video_world_physics_equivalent": true
+  },
+  "yard_h-10.sdf": {
+   "heading_deg": -10.0,
+   "lateral_span_m": 7.721933856718614,
+   "outer_width_m": 11.721933856718614,
+   "middle_third_width_m": 10.177547085374892,
+   "physics_collision_equivalent": true,
+   "overlay_collision_elements": 0,
+   "video_world": "video_h-10.sdf",
+   "video_world_physics_equivalent": true
+  },
+  "yard_h+0.sdf": {
+   "heading_deg": 0.0,
+   "lateral_span_m": 5.196152422706632,
+   "outer_width_m": 9.196152422706632,
+   "middle_third_width_m": 8.156921938165306,
+   "physics_collision_equivalent": true,
+   "overlay_collision_elements": 0,
+   "video_world": "video_h+0.sdf",
+   "video_world_physics_equivalent": true
+  },
+  "yard_h+10.sdf": {
+   "heading_deg": 10.0,
+   "lateral_span_m": 6.680044790717033,
+   "outer_width_m": 10.680044790717034,
+   "middle_third_width_m": 9.344035832573628,
+   "physics_collision_equivalent": true,
+   "overlay_collision_elements": 0,
+   "video_world": "video_h+10.sdf",
+   "video_world_physics_equivalent": true
+  },
+  "yard_h+20.sdf": {
+   "heading_deg": 20.0,
+   "lateral_span_m": 7.960967378027261,
+   "outer_width_m": 11.960967378027261,
+   "middle_third_width_m": 10.36877390242181,
+   "physics_collision_equivalent": true,
+   "overlay_collision_elements": 0,
+   "video_world": "video_h+20.sdf",
+   "video_world_physics_equivalent": true
+  }
+ }
+}

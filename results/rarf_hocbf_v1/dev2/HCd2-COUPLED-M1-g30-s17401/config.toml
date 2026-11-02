@@ -1,0 +1,166 @@
+
+[experiment]
+id = "coupled_safety"
+seed = 17401
+duration_s = 100.0
+
+[controller]
+mode = "ral26"
+script = "cs_agent_node_v4.py"
+
+[swarm]
+num_uavs = 6
+model = "gz_x500"
+autostart = 4001
+altitude_m = 5.0
+spawn_scale = 1.0
+
+[formation]
+type = "triangular_lattice"
+spacing_m = 6.0
+neighbor_radius_m = 12.0
+state_timeout_s = 0.5
+
+[safety]
+d_min = 1.5
+d_safe = 2.5
+
+[attack]
+id = "A14"
+
+[defense]
+id = "MRCBF"
+
+[network]
+backend = "ral26_fanet"
+emulation = "ral26"
+
+[attacks]
+profile = "none"
+enabled = false
+
+[learning]
+mode = "classical"
+
+[px4_params]
+SDLOG_MODE = -1
+
+[ral26]
+rate_hz = 20.0
+cmd_mode = "acceleration"
+velocity_tau_s = 0.5
+max_speed_mps = 4.0
+route = [23.96262, 1.33901]
+v_mission = 1.0
+scenario = "transit"
+squeeze = 0.2
+squeeze_t0 = 8.0
+squeeze_ramp_s = 8.0
+breathe_period_s = 10.0
+kp = 0.6
+kv = 1.2
+ka = 0.5
+kva = 1.0
+neighbor_radius_m = 12.0
+attacker_id = 3
+tx_rate_hz = 5.0
+tx_fast_hz = 20.0
+refresh_hold_s = 1.0
+static_age_s = 0.75
+nominal_age_s = 0.45
+gamma_warn = 0.5
+gamma_refresh = 0.75
+relax_gain = 1.0
+truth_hz = 50.0
+sim_time_net = true
+res_key = 87080381
+wall_timeout_s = 700.0
+
+[ral26.bounds]
+envelope = "sound_age"
+A_honest = 6.2
+U = 3.0
+W = 2.95
+A_any = 8.8
+beta_p = 1.25
+beta_v = 0.5
+T_net_max = 0.15
+ego_err_p = 0.4
+ego_err_v = 1.1
+d_safe = 1.5
+h = 0.4
+M = 8
+slew = 0.4
+sender_err_p = 0.4
+sender_err_v = 1.1
+T_net_max_adverse = 0.27
+
+[ral26.energy]
+enabled = true
+E0_wh = 60.0
+reserve_wh = 0.5
+P_return_upper_w = 320.0
+v_return = 0.25
+T_land_upper_s = 37.0
+v_return_cmd = 1.5
+inflation = 1.1
+model_valid = true
+
+[ral26.fanet]
+delay_s = 0.0
+jitter_s = 0.0
+loss = 0.0
+ge_p_gb = 0.0
+ge_p_bg = 0.3
+t_net_max = 0.05
+bucket_bytes_per_s = 2000.0
+bucket_burst_bytes = 576.0
+packet_bytes = 72
+
+[ral26.attack]
+attacker_policy = "D0R"
+attacker_refuse_refresh = true
+epsilon = 2.5
+beta_attack = 1.25
+beta_v_attack = 0.5
+start_s = 10.1396
+replay_s = 2.0
+trigger_radius_m = 9.0
+
+[cs]
+hold_s = 5.0
+squeeze_ramp_frac = 0.0833333
+clock = "plant"
+exec_chain = "v1"
+deadline_s = 0.025
+rtf_nominal = 0.3
+
+[cs.spawn_jitter]
+0 = [0.1213, 0.092]
+1 = [0.1469, 0.174]
+2 = [0.0636, 0.1039]
+3 = [-0.0529, 0.0583]
+4 = [-0.1087, -0.144]
+5 = [0.0945, -0.0849]
+
+[cs.info]
+mode = "standard"
+
+[cs.slot_shift]
+id = 3
+dx = -1.5
+dy = -2.5981
+toward = 0
+shift_toward_m = 3.0
+
+[cs.b2]
+d = 1.5
+rho = 1000.0
+eta = 0.0
+neighbor_radius = 12.0
+k1 = 1.0
+k2 = 1.0
+
+[wind]
+speed = 0.0
+sdf = "worlds/coupled_safety/yard_physics_rtf030.sdf"

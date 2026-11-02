@@ -1,0 +1,27 @@
+start 2026-10-31T13:19:52+05:30 profile=performance
+experiments/rarf_l1_adaptive/PLAN.md: OK
+experiments/rarf_l1_adaptive/design.py: OK
+experiments/rarf_l1_adaptive/specs/scale.json: OK
+swarmsec/rarf_l1/adaptive.py: OK
+swarmsec/rarf_l1/harness.py: OK
+scripts/rarf_l1/run_l1x.py: OK
+scripts/rarf_l1/metrics_multi.py: OK
+scripts/rarf_l1/adaptive_search.py: OK
+experiments/rarf_l1_breadth/design.py: OK
+scripts/coupled_safety/metrics.py: OK
+experiments/le_x_adaptive/PLAN.md: OK
+swarmsec/le_x/adaptive.py: OK
+swarmsec/le_x/sim_x.py: OK
+swarmsec/le_x/coalition.py: OK
+swarmsec/le/adversary.py: OK
+swarmsec/le/protocol.py: OK
+scripts/le_x/adaptive_search.py: OK
+scripts/le_x/run_scale.py: OK
+B-A1 search rc=0 2026-10-31T14:23:16+05:30
+A-R1 search rc=0 2026-10-31T15:35:10+05:30
+B-A1 test rc=0 2026-10-31T16:04:33+05:30
+A-R1 test rc=0 2026-10-31T17:16:07+05:30
+B-N1 scale rc=0 2026-10-31T18:06:59+05:30
+A-G1 fixed rc=0 2026-10-31T20:59:52+05:30
+A-G1 adaptive rc=0 2026-10-31T21:48:04+05:30
+CHAIN_DONE 2026-10-31T21:48:04+05:30

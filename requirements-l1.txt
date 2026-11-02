@@ -1,0 +1,12 @@
+# Layer-1 (calibrated planar simulator), analysis and test-suite dependencies; versions are those of the research image
+# (dronelab:research-v1.17) in which every Layer-1 result was produced and shown bit-reproducible.  Python 3.12.
+numpy==2.3.4
+scipy==1.16.3
+pandas==2.3.3
+matplotlib==3.10.8
+cvxpy==1.7.5
+clarabel==0.11.1
+osqp==1.0.0
+scs==3.2.11
+# optional: theorem checks B1-B4 (output/research/formal_20261101/B_avoidance/z3_avoidance.py)
+# z3-solver   (version used for the formal results: output/research/formal_20261101/README.md)

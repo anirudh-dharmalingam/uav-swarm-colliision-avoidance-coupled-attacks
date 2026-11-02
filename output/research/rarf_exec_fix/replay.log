@@ -1,0 +1,63 @@
+{
+ "violations_total": 309,
+ "by_set": {
+  "E1": 13,
+  "E3": 5,
+  "E5": 274,
+  "dev": 2,
+  "exp1": 14,
+  "exp2": 1
+ },
+ "by_set_in_window": {
+  "E1": 13,
+  "E3": 5,
+  "E5": 274,
+  "dev": 2,
+  "exp1": 14,
+  "exp2": 1
+ },
+ "by_cause": {
+  "onset": 137,
+  "both": 94,
+  "release": 78
+ },
+ "archived_json": 287,
+ "archived_matched": 287,
+ "archived_unmatched": [],
+ "max_selected_jump": 0.4010049875001556,
+ "max_sent_jump": 3.0249226436390075,
+ "max_v1_reproduction_err": 0.0013346130253976682,
+ "v2_open_loop_max_jump": 0.4000000670649712,
+ "v2_open_loop_all_in_X": true,
+ "v2_exact_spd_cases": 7,
+ "spd_v1_policy_err_max": 0.001586301686827834,
+ "v2_exact_max_jump": 0.4000000657301591,
+ "status_at_violation": {
+  "UNCERTIFIED": 290,
+  "NO_FILTER": 12,
+  "FALLBACK_FORCED": 4,
+  "UNCERTIFIED_POSTCLIP": 3
+ }
+}
+ set   variant  ticks  ticks_ref_ne_pub  violations_mission  violations_window
+  E1       D0R 347967                 0                   0                  0
+  E1      D24R 347975                 7                   3                  3
+  E1 D24R_NOSQ 347950                 0                   0                  0
+  E1       D26 770370                36                  10                 10
+  E2      D24R 260972                 0                   0                  0
+  E3       D0R 116021                18                   5                  5
+  E3      D24R 116009                 0                   0                  0
+  E4      D24R 139262                 0                   0                  0
+  E4 D24R_NOSQ 139230                 0                   0                  0
+  E5      D24R  69614              2357                 274                274
+ dev       D0R  34783                 0                   0                  0
+ dev   D0R_SPD 104370                 1                   2                  2
+ dev   D24R_FF  34782                 0                   0                  0
+ dev   D24R_SH  34779                 0                   0                  0
+exp1       D0R 104368                 0                   0                  0
+exp1   D0R_SPD 104391                39                   5                  5
+exp1   D24R_FF 104317                16                   3                  3
+exp1   D24R_SH 104326                40                   6                  6
+exp2       D0R  46420                 0                   0                  0
+exp2   D24R_FF  46298                 2                   1                  1
+exp2   D24R_SH  46269                 0                   0                  0

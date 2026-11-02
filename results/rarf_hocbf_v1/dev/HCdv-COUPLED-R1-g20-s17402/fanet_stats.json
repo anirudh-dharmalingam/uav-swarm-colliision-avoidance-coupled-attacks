@@ -1,0 +1,55 @@
+{
+ "t": 63.7207560885096,
+ "data": {
+  "tx": 1315,
+  "tx_bytes": 94680,
+  "budget_drop": 0,
+  "range_drop": 0,
+  "loss_drop": 0,
+  "outage_drop": 0,
+  "late_drop": 0,
+  "delivered": 6575
+ },
+ "req": {
+  "tx": 0,
+  "tx_bytes": 0,
+  "budget_drop": 0,
+  "range_drop": 0,
+  "loss_drop": 0,
+  "outage_drop": 0,
+  "late_drop": 0,
+  "delivered": 0
+ },
+ "bytes_by_sender": [
+  15840.0,
+  15768.0,
+  15696.0,
+  15624.0,
+  15768.0,
+  15984.0
+ ],
+ "req_bytes_by_sender": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "config": {
+  "delay_s": 0.0,
+  "jitter_s": 0.0,
+  "loss": 0.0,
+  "ge_p_gb": 0.0,
+  "ge_p_bg": 0.3,
+  "range_m": 60.0,
+  "range_soft_m": 25.0,
+  "range_loss_slope": 0.02,
+  "outages": [],
+  "bucket_bytes_per_s": 2000.0,
+  "bucket_burst_bytes": 576.0,
+  "packet_bytes": 72,
+  "t_net_max": 0.05,
+  "range_by_sender": null
+ }
+}

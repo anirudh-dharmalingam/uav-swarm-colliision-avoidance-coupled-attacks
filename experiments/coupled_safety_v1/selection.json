@@ -1,0 +1,14 @@
+{
+ "setting": "S0",
+ "why": "No development setting satisfied the registered certified-regime rule (valid-premise interval coverage >= 80%): S0 0.0%, S1 33.0%, S2 33.5% (output/research/coupled_safety_v1/dev_setting_selection.json). The mission-specified geometry S0 (6 m, 1 m/s) is therefore used as a CONTROLLED VULNERABILITY STUDY with explicit UNCERTIFIED labels; no guaranteed controller is claimed.",
+ "e5_report_beta_p": 3.0,
+ "e5_report_beta_v": 1.5,
+ "e5_epsilon": 6.0,
+ "e3_offsets_toward_m": [
+  0.0,
+  1.0,
+  2.0,
+  3.0
+ ],
+ "e3_why": "DEVIATION D2 from 'offsets bracketing the predicted certificate transition': under the frozen sound bounds the pairwise static certificate transition lies at 7-9 m clearance, but with a fixed global 6 m lattice an attacker slot cannot be moved to increase its clearance to ALL honest neighbours (lattice sites such as ids 1 and 4 have four neighbours at 6 m: any shift reduces some clearance; the first development sweep shifted AWAY and the realised minimum clearance fell, output/research/coupled_safety_v1/dev_e3_away_sweep_discarded.csv). E3 therefore shifts the attacker slot TOWARD its nearest honest neighbour (the encounter victim) by 0,1,2,3 m (initial clearance to the victim 6,5,4,3 m; yard envelope allows <= 3 m): the certificate is predicted infeasible at all four, so E3 tests the physical 1-D diagnostic M against measured outcomes, not a certificate transition."
+}

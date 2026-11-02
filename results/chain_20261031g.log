@@ -1,0 +1,179 @@
+start 2026-10-31T23:47:13+05:30
+experiments/rarf_l1_published/PLAN.md: OK
+scripts/rarf_l1/run_pb.py: OK
+scripts/rarf_l1/analyze_pb.py: OK
+swarmsec/ral26_baselines3.py: OK
+controllers/swarm/cs_agent_node_v5.py: OK
+controllers/swarm/cs_agent_node_v4.py: OK
+scripts/rarf_l1/run_l1x.py: OK
+scripts/rarf_l1/run_rz.py: OK
+scripts/rarf_l1/metrics_rz.py: OK
+scripts/rarf_l1/metrics_multi.py: OK
+scripts/rarf_l1/adaptive_search.py: OK
+scripts/coupled_safety/metrics.py: OK
+swarmsec/rarf_l1/harness.py: OK
+swarmsec/rarf_l1/adaptive.py: OK
+experiments/rarf_l1_adaptive/design.py: OK
+experiments/rarf_l1_breadth/design.py: OK
+experiments/rarf_hocbf_v1/design.py: OK
+output/research/rarf_l1_adaptive/theta_star.json: OK
+B-PB dev rc=0 2026-11-01T03:33:38+05:30
+B-PB spectrum rc=0 2026-11-01T03:37:57+05:30
+B-PB budget rc=0 2026-11-01T03:44:13+05:30
+B-PB search rc=0 2026-11-01T03:50:59+05:30
+B-PB test rc=0 2026-11-01T03:59:20+05:30
+B-PB rz rc=0 2026-11-01T04:04:13+05:30
+B-PB scale rc=0 2026-11-01T04:10:31+05:30
+method   NOM   SPD  RARF    FF  HOCBF  RHOCBF  ORCA  MRCBF   SBC   BVC
+attack                                                                
+A0      3.45  3.33  4.06  4.06   3.61    5.28  3.70   6.02  3.59  3.72
+A14     1.52  1.63  2.33  2.33   1.84    3.67  2.00   4.44  1.68  1.90
+A15     0.76  0.76  0.76  0.76   0.76    0.77  0.77   0.98  0.76  0.76
+A4      3.31  3.18  3.41  3.41   3.32    4.08  3.35   5.87  3.32  3.45
+A5      3.44  3.48  3.80  3.80   3.56    4.54  3.61   5.45  3.52  3.67
+A8      1.64  1.76  3.33  3.33   2.81    4.67  3.02   4.36  2.04  2.41
+method   NOM   SPD  RARF    FF  HOCBF  RHOCBF  ORCA  MRCBF   SBC   BVC
+attack                                                                
+A0      1.00  0.97  1.00  1.00   1.00    1.00  1.00   0.63  1.00  1.00
+A14     0.67  0.75  1.00  1.00   1.00    1.00  1.00   0.72  0.85  0.85
+A15     0.00  0.00  0.00  0.00   0.00    0.00  0.03   0.10  0.00  0.00
+A4      1.00  0.92  1.00  1.00   1.00    1.00  1.00   0.63  1.00  1.00
+A5      1.00  1.00  1.00  1.00   1.00    1.00  1.00   0.62  1.00  1.00
+A8      0.67  0.75  0.93  0.93   0.98    0.93  0.97   0.53  1.00  0.87
+{
+ "P1_A14_min_sep_ha": {
+  "RHOCBF-SBC": [
+   1.9859097350428572,
+   1.8822952278118783,
+   2.0854032795301602,
+   0.0,
+   0.0
+  ],
+  "RHOCBF-BVC": [
+   1.7610098378008125,
+   1.6088650122624022,
+   1.9153552422357643,
+   0.0,
+   0.0
+  ],
+  "RARF-SBC": [
+   0.6510781125322012,
+   0.6229060651504735,
+   0.6805094918762021,
+   0.0,
+   0.0
+  ],
+  "RARF-BVC": [
+   0.42617821529015665,
+   0.29481226976041874,
+   0.5642598013609315,
+   0.0,
+   0.0
+  ]
+ },
+ "budget_safe_cells": {
+  "BVC": 5,
+  "FF": 11,
+  "HOCBF": 9,
+  "MRCBF": 8,
+  "NOM": 5,
+  "ORCA": 10,
+  "RARF": 11,
+  "RHOCBF": 15,
+  "SBC": 6,
+  "SPD": 0
+ },
+ "budget_safe_inside_declared": {
+  "BVC": 3,
+  "FF": 9,
+  "HOCBF": 7,
+  "MRCBF": 6,
+  "NOM": 3,
+  "ORCA": 8,
+  "RARF": 9,
+  "RHOCBF": 9,
+  "SBC": 4,
+  "SPD": 0
+ },
+ "adaptive_own": {
+  "min_sep_ha": {
+   "BVC": 0.761,
+   "FF": 0.808,
+   "HOCBF": 0.765,
+   "MRCBF": 3.681,
+   "NOM": 0.762,
+   "ORCA": 0.776,
+   "RARF": 0.967,
+   "RHOCBF": 0.944,
+   "SBC": 0.764,
+   "SPD": 0.763
+  },
+  "route": {
+   "BVC": 0.0,
+   "FF": 0.05,
+   "HOCBF": 0.0,
+   "MRCBF": 0.217,
+   "NOM": 0.0,
+   "ORCA": 0.033,
+   "RARF": 0.367,
+   "RHOCBF": 0.117,
+   "SBC": 0.0,
+   "SPD": 0.0
+  },
+  "crash": {
+   "BVC": 1.0,
+   "FF": 0.933,
+   "HOCBF": 1.0,
+   "MRCBF": 0.45,
+   "NOM": 1.0,
+   "ORCA": 0.95,
+   "RARF": 0.55,
+   "RHOCBF": 0.8,
+   "SBC": 1.0,
+   "SPD": 1.0
+  }
+ },
+ "worst_case_g23": {
+  "BVC": {
+   "min_sep_ha": 0.759733256602743,
+   "src": "SPD"
+  },
+  "FF": {
+   "min_sep_ha": 0.7621085360432782,
+   "src": "HOCBF"
+  },
+  "HOCBF": {
+   "min_sep_ha": 0.7642975340888579,
+   "src": "BVC"
+  },
+  "MRCBF": {
+   "min_sep_ha": 3.0973625613167273,
+   "src": "HOCBF"
+  },
+  "NOM": {
+   "min_sep_ha": 0.7607866487124035,
+   "src": "FF"
+  },
+  "ORCA": {
+   "min_sep_ha": 0.7641002239837491,
+   "src": "BVC"
+  },
+  "RARF": {
+   "min_sep_ha": 0.7621085360432782,
+   "src": "HOCBF"
+  },
+  "RHOCBF": {
+   "min_sep_ha": 0.7672475730275926,
+   "src": "RHOCBF"
+  },
+  "SBC": {
+   "min_sep_ha": 0.7631675273252856,
+   "src": "BVC"
+  },
+  "SPD": {
+   "min_sep_ha": 0.7608302707017259,
+   "src": "BVC"
+  }
+ }
+}
+CHAIN_DONE 2026-11-01T04:10:33+05:30

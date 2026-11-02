@@ -1,0 +1,59 @@
+{
+ "source": "results/rarf_plant_time_v3/confirm",
+ "episodes": [
+  "PTc-COUPLED-FF-g00-s17300",
+  "PTc-COUPLED-FF-g00-s17302",
+  "PTc-COUPLED-FF-g00-s17306",
+  "PTc-COUPLED-FF-g00-s17312",
+  "PTc-COUPLED-FF-g20-s17313",
+  "PTc-COUPLED-FF-g30-s17313",
+  "PTc-COUPLED-NOM-g00-s17304",
+  "PTc-COUPLED-NOM-g30-s17306",
+  "PTc-COUPLED-NOM-g30-s17310",
+  "PTc-COUPLED-RARF-g00-s17304",
+  "PTc-COUPLED-RARF-g00-s17307",
+  "PTc-COUPLED-RARF-g00-s17310",
+  "PTc-COUPLED-RARF-g00-s17313",
+  "PTc-COUPLED-RARF-g20-s17303",
+  "PTc-COUPLED-RARF-g20-s17304",
+  "PTc-COUPLED-RARF-g30-s17300",
+  "PTc-COUPLED-RARF-g30-s17305",
+  "PTc-COUPLED-RARF-g30-s17313",
+  "PTc-COUPLED-SPD-g00-s17300",
+  "PTc-COUPLED-SPD-g00-s17310",
+  "PTc-COUPLED-SPD-g20-s17303",
+  "PTc-COUPLED-SPD-g20-s17314",
+  "PTc-COUPLED-SPD-g30-s17300",
+  "PTc-COUPLED-SPD-g30-s17311"
+ ],
+ "segments": 120,
+ "actuator": {
+  "wn": 8.0,
+  "zeta": 0.6,
+  "td": 0.0,
+  "train_rmse": 0.37379615109327335,
+  "holdout_rmse": 0.44559671436995407,
+  "holdout_p99_abs": 1.5905850340700622,
+  "zero_model_holdout_rmse": 0.4983976777383986
+ },
+ "ego_p": {
+  "sd": 0.04957915578650766,
+  "p99_abs": 0.13138104392805416,
+  "max_abs": 0.2692054312785066,
+  "tau_s": 3.75,
+  "mean": [
+   0.025135040568488864,
+   0.006536790451011684
+  ]
+ },
+ "ego_v": {
+  "sd": 0.05315180535543687,
+  "p99_abs": 0.1918904456590989,
+  "max_abs": 0.6156127625842014,
+  "tau_s": 0.8500000000000001,
+  "mean": [
+   0.010016764282538778,
+   0.006407673623331106
+  ]
+ }
+}

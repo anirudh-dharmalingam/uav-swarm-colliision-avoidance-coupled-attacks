@@ -1,0 +1,8 @@
+# outputs written by the lab, the tools and the test-suite
+results/mb_lab/
+results/mb_lab_px4/
+.cache/
+__pycache__/
+*.pyc
+.venv/
+venv/

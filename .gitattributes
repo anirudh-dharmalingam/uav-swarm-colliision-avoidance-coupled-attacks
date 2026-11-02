@@ -1,0 +1,2 @@
+# Store every file byte-exact (MANIFEST.sha256 must hold on a fresh clone): no line-ending conversion.
+* -text

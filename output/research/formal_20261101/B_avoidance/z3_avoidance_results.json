@@ -1,0 +1,26 @@
+{
+ "B1_robust_row_sound_exact_info": {
+  "result": "PROVED",
+  "model": null
+ },
+ "B3a_soft_row_ISSf_algebra": {
+  "result": "PROVED",
+  "model": null
+ },
+ "B2_falsification_breaks_robust_row": {
+  "result": "WITNESS FOUND",
+  "model": "[nh = 7/2,\n epy = 0.4798527267?,\n k1 = 1,\n aix = 1,\n epx = 3/8,\n evx = 15/32,\n ry = 3,\n rx = 0,\n aiy = 1,\n vy = 1/16,\n k2 = 1,\n ajy = 79/32,\n abar = 5/2,\n D = 3/2,\n ajx = 1/4,\n vx = 0,\n evy = 1/8]"
+ },
+ "B3b_row_infeasible_when_abar_exceeds_U": {
+  "result": "NO WITNESS",
+  "model": null
+ },
+ "B4_blocking_every_passing_point_within_w": {
+  "result": "PROVED",
+  "model": null
+ },
+ "B4_blocking_incompatible_if_w_lt_dsafe": {
+  "result": "PROVED",
+  "model": null
+ }
+}

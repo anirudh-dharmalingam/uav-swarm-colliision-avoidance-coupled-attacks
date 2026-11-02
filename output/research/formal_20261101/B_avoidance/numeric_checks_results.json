@@ -1,0 +1,84 @@
+{
+ "B5_pursuit_regimes": {
+  "i_VA_gt_VD|flee": {
+   "capture_share": 1.0,
+   "t_capture_max": 19.51000000000025,
+   "min_dist_if_escaped": null
+  },
+  "i_VA_gt_VD|lateral": {
+   "capture_share": 1.0,
+   "t_capture_max": 7.69999999999988,
+   "min_dist_if_escaped": null
+  },
+  "ii_equal_speed_aA_gt_aD_free|flee": {
+   "capture_share": 0.0,
+   "t_capture_max": null,
+   "min_dist_if_escaped": 13.178020447033385
+  },
+  "ii_equal_speed_aA_gt_aD_free|lateral": {
+   "capture_share": 1.0,
+   "t_capture_max": 9.279999999999847,
+   "min_dist_if_escaped": null
+  },
+  "iii_equal_speed_aA_gt_aD_tube3m|tube": {
+   "capture_share": 0.0,
+   "t_capture_max": null,
+   "min_dist_if_escaped": 13.177439157912563
+  },
+  "iv_no_speed_caps_aA_gt_aD|flee": {
+   "capture_share": 1.0,
+   "t_capture_max": 6.7599999999999,
+   "min_dist_if_escaped": null
+  },
+  "iv_no_speed_caps_aA_gt_aD|lateral": {
+   "capture_share": 1.0,
+   "t_capture_max": 5.809999999999921,
+   "min_dist_if_escaped": null
+  },
+  "v_equal_authority_free|flee": {
+   "capture_share": 0.0,
+   "t_capture_max": null,
+   "min_dist_if_escaped": 13.228473981207086
+  },
+  "v_equal_authority_free|lateral": {
+   "capture_share": 1.0,
+   "t_capture_max": 16.039999999999708,
+   "min_dist_if_escaped": null
+  },
+  "vi_equal_speed_attacker_ahead_tube3m|tube": {
+   "capture_share": 1.0,
+   "t_capture_max": 6.069999999999915,
+   "min_dist_if_escaped": null
+  },
+  "vii_equal_authority_attacker_ahead_tube3m|tube": {
+   "capture_share": 0.7,
+   "t_capture_max": 6.419999999999908,
+   "min_dist_if_escaped": 0.7807291334616158
+  }
+ },
+ "B3c_exact_penalty": {
+  "n": 400,
+  "exact_threshold_quantiles": {
+   "0.5": 398.1071705534973,
+   "0.9": 10000.0
+  },
+  "share_exact_by_1e3": 0.5275,
+  "dist_to_rho1e4_solution_m_s2": {
+   "rho10": {
+    "median": 0.004493608790361297,
+    "q90": 0.11676530489108637,
+    "max": 2.4774036839835003
+   },
+   "rho100": {
+    "median": 0.00022358172066994423,
+    "q90": 0.010549234003279334,
+    "max": 0.9794827771875957
+   },
+   "rho1000": {
+    "median": 2.5236421636582785e-05,
+    "q90": 0.0009573974307999202,
+    "max": 0.008160388754432615
+   }
+  }
+ }
+}

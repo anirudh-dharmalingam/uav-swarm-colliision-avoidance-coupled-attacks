@@ -1,0 +1,621 @@
+{
+ "tag": "calib",
+ "base": "config/swarm/ral26_base.toml",
+ "results_root": "results/coupled_safety_v1",
+ "common": {
+  "experiment": {
+   "duration_s": 90.0
+  },
+  "swarm": {
+   "num_uavs": 6
+  },
+  "formation": {
+   "spacing_m": 30.0
+  },
+  "ral26": {
+   "truth_hz": 50.0
+  }
+ },
+ "episodes": [
+  {
+   "name": "calib_train_s11000",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11000
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11001",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11001
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11002",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11002
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11003",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11003
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11004",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11004
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11005",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11005
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11006",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11006
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11007",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11007
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11008",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11008
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11009",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11009
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11010",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11010
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_train_s11011",
+   "meta": {
+    "split": "train",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11011
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11100",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11100
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11101",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11101
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11102",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11102
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11103",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11103
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11104",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11104
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11105",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11105
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11106",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11106
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11107",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11107
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11108",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11108
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11109",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11109
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11110",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11110
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  },
+  {
+   "name": "calib_holdout_s11111",
+   "meta": {
+    "split": "holdout",
+    "mode": "acceleration",
+    "jerk": 8.0
+   },
+   "overrides": {
+    "experiment": {
+     "seed": 11111
+    },
+    "controller": {
+     "mode": "hf1",
+     "script": "hf1_tracking_node.py"
+    },
+    "hf1": {
+     "mode": "acceleration",
+     "jerk": 8.0,
+     "hold_s": 1.5,
+     "vmax": 4.0,
+     "cell_m": 4.0,
+     "velocity_tau_s": 0.5
+    }
+   }
+  }
+ ]
+}

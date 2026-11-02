@@ -1,0 +1,30 @@
+start 2026-10-31T13:26:46+05:30
+start 2026-10-31T19:55:55+05:30
+start 2026-10-31T20:27:37+05:30
+start 2026-10-31T21:13:27+05:30
+start 2026-10-31T23:47:15+05:30
+start 2026-11-01T00:08:43+05:30
+la_robust validation rc=0 2026-11-01T09:48:44+05:30
+{
+ "runs": 240,
+ "ok": 240,
+ "flags_summary": {
+  "CADLE-CADLE_NV|advantage": 1,
+  "CADLE-CADLE_NV|unresolved": 2,
+  "CADLE-CAPRAFT_MS_T|advantage": 2,
+  "CADLE-CAPRAFT_MS_T|unresolved": 1
+ }
+}
+experiments/le_x_collusion/validation_cells.json: OK
+experiments/le_x_collusion/VALIDATION.md: OK
+A-C1 validation rc=0 2026-11-01T11:27:48+05:30
+{
+ "runs": 2775,
+ "ok": 2775,
+ "P1_cells": 94,
+ "P1_rises_resolved": 71,
+ "P2_cells": 32,
+ "P2_advantage_holm05": 31,
+ "P2_reversal": 0
+}
+CHAIN_DONE 2026-11-01T11:27:49+05:30

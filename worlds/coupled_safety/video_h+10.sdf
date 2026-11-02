@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.9">
+  <world name="default">
+    <physics type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type="adiabatic"/>
+    <scene>
+      <grid>false</grid>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>1 1</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>500 500</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <light name="sunUTC" type="directional">
+      <pose>0 0 500 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0.001 0.625 -0.78</direction>
+      <diffuse>0.904 0.904 0.904 1</diffuse>
+      <specular>0.271 0.271 0.271 1</specular>
+      <attenuation>
+        <range>2000</range>
+        <linear>0</linear>
+        <constant>1</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>47.397971057728974</latitude_deg>
+      <longitude_deg> 8.546163739800146</longitude_deg>
+      <elevation>0</elevation>
+    </spherical_coordinates>
+  
+    <model name="hangar_N0"><static>true</static><pose>-4.000 19.057 3.000 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>12.0 2.0 6.0</size></box></geometry></collision><visual name="v"><geometry><box><size>12.0 2.0 6.0</size></box></geometry><material><ambient>0.55 0.58 0.62 1</ambient><diffuse>0.55 0.58 0.62 1</diffuse></material></visual></link></model>
+    <model name="hangar_N1"><static>true</static><pose>16.000 19.057 3.000 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>12.0 2.0 6.0</size></box></geometry></collision><visual name="v"><geometry><box><size>12.0 2.0 6.0</size></box></geometry><material><ambient>0.55 0.58 0.62 1</ambient><diffuse>0.55 0.58 0.62 1</diffuse></material></visual></link></model>
+    <model name="hangar_N2"><static>true</static><pose>34.000 19.057 3.000 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>12.0 2.0 6.0</size></box></geometry></collision><visual name="v"><geometry><box><size>12.0 2.0 6.0</size></box></geometry><material><ambient>0.55 0.58 0.62 1</ambient><diffuse>0.55 0.58 0.62 1</diffuse></material></visual></link></model>
+    <model name="rack_S0"><static>true</static><pose>-3.000 -19.057 1.500 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>6.0 2.0 3.0</size></box></geometry></collision><visual name="v"><geometry><box><size>6.0 2.0 3.0</size></box></geometry><material><ambient>0.70 0.45 0.20 1</ambient><diffuse>0.70 0.45 0.20 1</diffuse></material></visual></link></model>
+    <model name="rack_S1"><static>true</static><pose>6.000 -19.057 1.500 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>6.0 2.0 3.0</size></box></geometry></collision><visual name="v"><geometry><box><size>6.0 2.0 3.0</size></box></geometry><material><ambient>0.70 0.45 0.20 1</ambient><diffuse>0.70 0.45 0.20 1</diffuse></material></visual></link></model>
+    <model name="rack_S2"><static>true</static><pose>15.000 -19.057 1.500 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>6.0 2.0 3.0</size></box></geometry></collision><visual name="v"><geometry><box><size>6.0 2.0 3.0</size></box></geometry><material><ambient>0.70 0.45 0.20 1</ambient><diffuse>0.70 0.45 0.20 1</diffuse></material></visual></link></model>
+    <model name="rack_S3"><static>true</static><pose>24.000 -19.057 1.500 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>6.0 2.0 3.0</size></box></geometry></collision><visual name="v"><geometry><box><size>6.0 2.0 3.0</size></box></geometry><material><ambient>0.70 0.45 0.20 1</ambient><diffuse>0.70 0.45 0.20 1</diffuse></material></visual></link></model>
+    <model name="fence_E"><static>true</static><pose>39.050 0.000 1.250 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>0.2 34.11311930233873 2.5</size></box></geometry></collision><visual name="v"><geometry><box><size>0.2 34.11311930233873 2.5</size></box></geometry><material><ambient>0.40 0.40 0.45 1</ambient><diffuse>0.40 0.40 0.45 1</diffuse></material></visual></link></model>
+    <model name="fence_W"><static>true</static><pose>-15.050 0.000 1.250 0 0 0.00000</pose><link name="l"><collision name="c"><geometry><box><size>0.2 34.11311930233873 2.5</size></box></geometry></collision><visual name="v"><geometry><box><size>0.2 34.11311930233873 2.5</size></box></geometry><material><ambient>0.40 0.40 0.45 1</ambient><diffuse>0.40 0.40 0.45 1</diffuse></material></visual></link></model>
+    <model name="pad0"><static>true</static><pose>-7.500 -2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+    <model name="pad1"><static>true</static><pose>-1.500 -2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+    <model name="pad2"><static>true</static><pose>4.500 -2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+    <model name="pad3"><static>true</static><pose>-4.500 2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+    <model name="pad4"><static>true</static><pose>1.500 2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+    <model name="pad5"><static>true</static><pose>7.500 2.598 0.005 0 0 0</pose><link name="l"><visual name="v"><geometry><cylinder><radius>0.9</radius><length>0.01</length></cylinder></geometry><material><ambient>0.95 0.85 0.10 1</ambient><diffuse>0.95 0.85 0.10 1</diffuse></material></visual></link></model>
+  
+    <model name="lane_a_L"><static>true</static><pose>3.012 5.953 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="lane_a_R"><static>true</static><pose>4.867 -4.564 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="lane_b_L"><static>true</static><pose>11.006 6.685 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="lane_b_R"><static>true</static><pose>12.629 -2.517 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="lane_c_L"><static>true</static><pose>18.769 8.732 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="lane_c_R"><static>true</static><pose>20.623 -1.786 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>8.0 0.15 0.02</size></box></geometry><material><ambient>1.0 1.0 1.0 1</ambient><diffuse>1.0 1.0 1.0 1</diffuse></material></visual></link></model>
+    <model name="dash0"><static>true</static><pose>0.985 0.174 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash1"><static>true</static><pose>2.954 0.521 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash2"><static>true</static><pose>4.924 0.868 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash3"><static>true</static><pose>6.894 1.216 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash4"><static>true</static><pose>8.863 1.563 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash5"><static>true</static><pose>10.833 1.910 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash6"><static>true</static><pose>12.803 2.257 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash7"><static>true</static><pose>14.772 2.605 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash8"><static>true</static><pose>16.742 2.952 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash9"><static>true</static><pose>18.711 3.299 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash10"><static>true</static><pose>20.681 3.647 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="dash11"><static>true</static><pose>22.651 3.994 0.011 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.9 0.12 0.02</size></box></geometry><material><ambient>0.2 0.8 1.0 1</ambient><diffuse>0.2 0.8 1.0 1</diffuse><emissive>0.1 0.5 0.8 1</emissive></material></visual></link></model>
+    <model name="bead0"><static>true</static><pose>0.000 0.000 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead1"><static>true</static><pose>0.985 0.174 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead2"><static>true</static><pose>1.970 0.347 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead3"><static>true</static><pose>2.954 0.521 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead4"><static>true</static><pose>3.939 0.695 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead5"><static>true</static><pose>4.924 0.868 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead6"><static>true</static><pose>5.909 1.042 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead7"><static>true</static><pose>6.894 1.216 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead8"><static>true</static><pose>7.878 1.389 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead9"><static>true</static><pose>8.863 1.563 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead10"><static>true</static><pose>9.848 1.736 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead11"><static>true</static><pose>10.833 1.910 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead12"><static>true</static><pose>11.818 2.084 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead13"><static>true</static><pose>12.803 2.257 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead14"><static>true</static><pose>13.787 2.431 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead15"><static>true</static><pose>14.772 2.605 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead16"><static>true</static><pose>15.757 2.778 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead17"><static>true</static><pose>16.742 2.952 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead18"><static>true</static><pose>17.727 3.126 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead19"><static>true</static><pose>18.711 3.299 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead20"><static>true</static><pose>19.696 3.473 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead21"><static>true</static><pose>20.681 3.647 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead22"><static>true</static><pose>21.666 3.820 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead23"><static>true</static><pose>22.651 3.994 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="bead24"><static>true</static><pose>23.635 4.168 5.000 0 0 0</pose><link name="l"><visual name="v"><geometry><sphere><radius>0.1</radius></sphere></geometry><material><ambient>1 0.9 0.2 1</ambient><diffuse>1 0.9 0.2 1</diffuse><emissive>1 0.8 0.1 1</emissive></material></visual></link></model>
+    <model name="gate_start_postL"><static>true</static><pose>-1.031 5.850 4.000 0 0 0.00000</pose><link name="l"><visual name="v"><geometry><box><size>0.25 0.25 8.0</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="gate_start_postR"><static>true</static><pose>1.031 -5.850 4.000 0 0 0.00000</pose><link name="l"><visual name="v"><geometry><box><size>0.25 0.25 8.0</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="gate_start_beam"><static>true</static><pose>0.000 0.000 8.000 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.25 12.180044790717034 0.25</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="gate_goal_postL"><static>true</static><pose>22.604 10.017 4.000 0 0 0.00000</pose><link name="l"><visual name="v"><geometry><box><size>0.25 0.25 8.0</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="gate_goal_postR"><static>true</static><pose>24.667 -1.682 4.000 0 0 0.00000</pose><link name="l"><visual name="v"><geometry><box><size>0.25 0.25 8.0</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="gate_goal_beam"><static>true</static><pose>23.635 4.168 8.000 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>0.25 12.180044790717034 0.25</size></box></geometry><material><ambient>0.9 0.3 0.1 1</ambient><diffuse>0.9 0.3 0.1 1</diffuse></material></visual></link></model>
+    <model name="staging_platform"><static>true</static><pose>23.635 4.168 0.030 0 0 0.17453</pose><link name="l"><visual name="v"><geometry><box><size>9.0 9.0 0.06</size></box></geometry><material><ambient>0.25 0.5 0.35 1</ambient><diffuse>0.25 0.5 0.35 1</diffuse></material></visual></link></model>
+  
+    <model name="cam_oblique"><static>true</static><pose>-4.115 -16.972 13.000 0 0.38273 0.87443</pose><link name="l"><sensor name="cam" type="camera"><camera><horizontal_fov>1.15</horizontal_fov><image><width>1920</width><height>1080</height></image><clip><near>0.1</near><far>300</far></clip></camera><always_on>1</always_on><update_rate>30.0</update_rate><visualize>false</visualize><topic>/cs/cam_oblique</topic></sensor></link></model>
+    <model name="cam_top"><static>true</static><pose>11.818 2.084 34.000 0 1.57080 0.00000</pose><link name="l"><sensor name="cam" type="camera"><camera><horizontal_fov>0.95</horizontal_fov><image><width>1920</width><height>1080</height></image><clip><near>0.1</near><far>300</far></clip></camera><always_on>1</always_on><update_rate>30.0</update_rate><visualize>false</visualize><topic>/cs/cam_top</topic></sensor></link></model>
+  </world>
+</sdf>

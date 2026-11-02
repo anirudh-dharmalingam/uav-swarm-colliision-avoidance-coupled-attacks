@@ -1,0 +1,329 @@
+{
+ "inventory": {
+  "planned": 72,
+  "analysable": 72,
+  "non_analysable": []
+ },
+ "instrument_pass": {
+  "M1": "12/12",
+  "M2": "11/12",
+  "M3": "11/12",
+  "O1": "12/12",
+  "O2": "12/12",
+  "O3": "11/12"
+ },
+ "instrument_fail_criteria": {
+  "inst_rtf": 0,
+  "inst_miss": 3,
+  "inst_rate": 0,
+  "inst_ref": 0,
+  "inst_onset": 0
+ },
+ "hocbf_audit_by_arm_geometry": {
+  "M1|g0": {
+   "b2_n": 1849.0,
+   "b2_slack_pos": 0.4753237535056847,
+   "b2_slack_max": 1076.446975,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.4753237535056847,
+   "b2_ic_ok": 0.02745413392472166,
+   "b2_slew_mod": 0.11282163893259729,
+   "b2_ms_p99": 23.218867499999998,
+   "b2_nonoptimal": 0.0
+  },
+  "M1|g2": {
+   "b2_n": 1845.75,
+   "b2_slack_pos": 0.4925291520866582,
+   "b2_slack_max": 1131.6589000000001,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.4925291520866582,
+   "b2_ic_ok": 0.02370990530418787,
+   "b2_slew_mod": 0.11674277743145128,
+   "b2_ms_p99": 24.74944499999999,
+   "b2_nonoptimal": 0.0
+  },
+  "M1|g3": {
+   "b2_n": 1847.5,
+   "b2_slack_pos": 0.4939468887952044,
+   "b2_slack_max": 1113.52045,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.4939468887952044,
+   "b2_ic_ok": 0.023691136140663482,
+   "b2_slew_mod": 0.1199032758304955,
+   "b2_ms_p99": 25.113597499999994,
+   "b2_nonoptimal": 0.0
+  },
+  "M2|g0": {
+   "b2_n": 1847.75,
+   "b2_slack_pos": 0.5247557783568026,
+   "b2_slack_max": 1655.29695,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.5247557783568026,
+   "b2_ic_ok": 0.12974912268288724,
+   "b2_slew_mod": 0.10586820947967392,
+   "b2_ms_p99": 27.2269625,
+   "b2_nonoptimal": 0.0
+  },
+  "M2|g2": {
+   "b2_n": 1847.5,
+   "b2_slack_pos": 0.48958640853261537,
+   "b2_slack_max": 1749.571375,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.48958640853261537,
+   "b2_ic_ok": 0.14690915868318816,
+   "b2_slew_mod": 0.11952513897681158,
+   "b2_ms_p99": 28.430050000000037,
+   "b2_nonoptimal": 0.0
+  },
+  "M2|g3": {
+   "b2_n": 1847.25,
+   "b2_slack_pos": 0.49856929737508254,
+   "b2_slack_max": 1656.726575,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.49856929737508254,
+   "b2_ic_ok": 0.13605701198951153,
+   "b2_slew_mod": 0.10829451776050394,
+   "b2_ms_p99": 21.911410000000025,
+   "b2_nonoptimal": 0.0
+  },
+  "M3|g0": {
+   "b2_n": 1846.25,
+   "b2_slack_pos": 0.4961793541574694,
+   "b2_slack_max": 726.7531749999999,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.4961793541574694,
+   "b2_ic_ok": 0.004492308172185313,
+   "b2_slew_mod": 0.1250345997651828,
+   "b2_ms_p99": 25.98005749999999,
+   "b2_nonoptimal": 0.0
+  },
+  "M3|g2": {
+   "b2_n": 1847.0,
+   "b2_slack_pos": 0.48628488323012586,
+   "b2_slack_max": 779.12355,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.48628488323012586,
+   "b2_ic_ok": 0.0037984249838897244,
+   "b2_slew_mod": 0.10246674483318124,
+   "b2_ms_p99": 24.825140000000005,
+   "b2_nonoptimal": 0.0
+  },
+  "M3|g3": {
+   "b2_n": 1848.0,
+   "b2_slack_pos": 0.4810886359679629,
+   "b2_slack_max": 747.049475,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.4810886359679629,
+   "b2_ic_ok": 0.006320463485348286,
+   "b2_slew_mod": 0.1154048379635772,
+   "b2_ms_p99": 28.565812499999957,
+   "b2_nonoptimal": 0.0
+  },
+  "O1|g0": {
+   "b2_n": 1848.0,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.0,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.01128309771635014,
+   "b2_ms_p99": 4.472084999999997,
+   "b2_nonoptimal": 0.0
+  },
+  "O1|g2": {
+   "b2_n": 1848.0,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.0,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.011402517543826228,
+   "b2_ms_p99": 4.746652499999982,
+   "b2_nonoptimal": 0.0
+  },
+  "O1|g3": {
+   "b2_n": 1847.0,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0017045454545454545,
+   "b2_viol_pos": 0.0017045454545454545,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.014213572997225995,
+   "b2_ms_p99": 5.075655000000009,
+   "b2_nonoptimal": 0.0
+  },
+  "O2|g0": {
+   "b2_n": 1846.5,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.0,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.015745567662689405,
+   "b2_ms_p99": 4.682485000000002,
+   "b2_nonoptimal": 0.0
+  },
+  "O2|g2": {
+   "b2_n": 1848.75,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.0,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.016411563624835528,
+   "b2_ms_p99": 5.145302500000001,
+   "b2_nonoptimal": 0.0
+  },
+  "O2|g3": {
+   "b2_n": 1848.0,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0073654390934844195,
+   "b2_viol_pos": 0.0073654390934844195,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.04733767727159165,
+   "b2_ms_p99": 5.538154999999989,
+   "b2_nonoptimal": 0.0
+  },
+  "O3|g0": {
+   "b2_n": 1849.5,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.0,
+   "b2_viol_pos": 0.0,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.012885995382718394,
+   "b2_ms_p99": 4.966345000000002,
+   "b2_nonoptimal": 0.0
+  },
+  "O3|g2": {
+   "b2_n": 1845.75,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.00541002277904328,
+   "b2_viol_pos": 0.00541002277904328,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.02712909291668867,
+   "b2_ms_p99": 4.510457500000001,
+   "b2_nonoptimal": 0.0
+  },
+  "O3|g3": {
+   "b2_n": 1845.25,
+   "b2_slack_pos": 0.0,
+   "b2_slack_max": NaN,
+   "b2_infeasible": 0.009522455940875498,
+   "b2_viol_pos": 0.009522455940875498,
+   "b2_ic_ok": NaN,
+   "b2_slew_mod": 0.05732489093555685,
+   "b2_ms_p99": 5.901055000000007,
+   "b2_nonoptimal": 0.0
+  }
+ },
+ "candidates": {
+  "M1": {
+   "n": 12,
+   "route_complete": 8,
+   "crash": 2,
+   "viol15": 0,
+   "mean_min_sep_ha": 6.235920410153405,
+   "min_min_sep_ha": 4.597177938692389,
+   "per_geometry_mean": {
+    "g0": 6.2905638125081245,
+    "g2": 6.343313563632636,
+    "g3": 6.073883854319454
+   },
+   "effort_rms": 2.483071989491681,
+   "eligible": false
+  },
+  "M2": {
+   "n": 12,
+   "route_complete": 8,
+   "crash": 4,
+   "viol15": 0,
+   "mean_min_sep_ha": 5.843965382237997,
+   "min_min_sep_ha": 2.772238265373307,
+   "per_geometry_mean": {
+    "g0": 4.567398407379389,
+    "g2": 6.850169640416142,
+    "g3": 6.1143280989184605
+   },
+   "effort_rms": 2.4897566264255273,
+   "eligible": false
+  },
+  "M3": {
+   "n": 12,
+   "route_complete": 5,
+   "crash": 4,
+   "viol15": 1,
+   "mean_min_sep_ha": 5.544061679445586,
+   "min_min_sep_ha": 0.9169498350509695,
+   "per_geometry_mean": {
+    "g0": 5.792671627150037,
+    "g2": 6.0943478531609445,
+    "g3": 4.745165558025774
+   },
+   "effort_rms": 2.4694492638852927,
+   "eligible": false
+  },
+  "O1": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 8,
+   "mean_min_sep_ha": 1.6686086056771596,
+   "min_min_sep_ha": 0.5883689318786314,
+   "per_geometry_mean": {
+    "g0": 2.885445638103743,
+    "g2": 1.3425669279760708,
+    "g3": 0.7778132509516646
+   },
+   "effort_rms": 0.3393079668802143,
+   "eligible": true
+  },
+  "O2": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 6,
+   "mean_min_sep_ha": 1.8510930572044295,
+   "min_min_sep_ha": 0.9396414209686579,
+   "per_geometry_mean": {
+    "g0": 2.887959434544306,
+    "g2": 1.5642433499965889,
+    "g3": 1.101076387072394
+   },
+   "effort_rms": 0.41912007091605225,
+   "eligible": true
+  },
+  "O3": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 3,
+   "mean_min_sep_ha": 2.1147346774374083,
+   "min_min_sep_ha": 1.3123627547290435,
+   "per_geometry_mean": {
+    "g0": 3.0885036306583515,
+    "g2": 1.7627271697072728,
+    "g3": 1.4929732319466016
+   },
+   "effort_rms": 0.483568264752465,
+   "eligible": true
+  }
+ },
+ "selection": {
+  "ORCA": {
+   "selected": "O3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "MRCBF": {
+   "selected": "M1",
+   "why": "none eligible: most completions, tie by min_sep"
+  }
+ },
+ "note": "development only (HOCBF candidates); planning SD per PLAN.md amendment A1",
+ "sample_size_rule": {
+  "N": 12,
+  "note": "PLAN.md amendment A2: compute cap 12 = clamp floor; N fixed"
+ }
+}

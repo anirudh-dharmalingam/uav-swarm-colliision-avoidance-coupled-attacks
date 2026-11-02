@@ -1,0 +1,130 @@
+it 0 NOM: best 0.759  mean-cand 1.792  A14 1.792  07:59
+it 0 SPD: best 0.764  mean-cand 1.735  A14 1.735  07:59
+it 0 RARF: best 1.044  mean-cand 2.387  A14 2.387  07:59
+it 0 FF: best 1.569  mean-cand 2.387  A14 2.387  07:59
+it 0 HOCBF: best 0.768  mean-cand 2.026  A14 2.026  07:59
+it 0 RHOCBF: best 1.367  mean-cand 3.718  A14 3.718  07:59
+it 0 ORCA: best 0.790  mean-cand 2.175  A14 2.175  07:59
+it 0 MRCBF: best 2.732  mean-cand 4.831  A14 4.831  07:59
+it 1 NOM: best 0.758  mean-cand 0.765  A14 1.836  08:08
+it 1 SPD: best 0.764  mean-cand 0.764  A14 1.840  08:08
+it 1 RARF: best 1.141  mean-cand 1.479  A14 2.573  08:08
+it 1 FF: best 0.798  mean-cand 0.963  A14 2.562  08:08
+it 1 HOCBF: best 0.764  mean-cand 0.768  A14 2.116  08:08
+it 1 RHOCBF: best 1.229  mean-cand 2.598  A14 3.673  08:08
+it 1 ORCA: best 0.769  mean-cand 1.413  A14 2.294  08:08
+it 1 MRCBF: best 3.769  mean-cand 5.201  A14 4.438  08:08
+it 2 NOM: best 0.760  mean-cand 0.761  A14 1.796  08:18
+it 2 SPD: best 0.761  mean-cand 0.763  A14 1.918  08:18
+it 2 RARF: best 0.930  mean-cand 1.133  A14 2.404  08:18
+it 2 FF: best 0.762  mean-cand 1.038  A14 2.404  08:18
+it 2 HOCBF: best 0.762  mean-cand 0.765  A14 2.057  08:18
+it 2 RHOCBF: best 1.023  mean-cand 2.302  A14 3.835  08:18
+it 2 ORCA: best 0.766  mean-cand 0.901  A14 2.262  08:18
+it 2 MRCBF: best 3.724  mean-cand 5.539  A14 6.019  08:18
+it 3 NOM: best 0.760  mean-cand 0.763  A14 1.858  08:27
+it 3 SPD: best 0.761  mean-cand 0.763  A14 1.911  08:27
+it 3 RARF: best 0.927  mean-cand 1.333  A14 2.514  08:27
+it 3 FF: best 0.762  mean-cand 0.763  A14 2.514  08:27
+it 3 HOCBF: best 0.764  mean-cand 0.767  A14 2.144  08:27
+it 3 RHOCBF: best 0.921  mean-cand 1.354  A14 3.659  08:27
+it 3 ORCA: best 0.767  mean-cand 0.768  A14 2.360  08:27
+it 3 MRCBF: best 3.475  mean-cand 3.704  A14 4.177  08:27
+it 4 NOM: best 0.760  mean-cand 0.762  A14 1.681  08:37
+it 4 SPD: best 0.760  mean-cand 0.762  A14 1.669  08:37
+it 4 RARF: best 1.057  mean-cand 1.152  A14 2.347  08:37
+it 4 FF: best 0.764  mean-cand 0.859  A14 2.347  08:37
+it 4 HOCBF: best 0.763  mean-cand 0.766  A14 2.046  08:37
+it 4 RHOCBF: best 1.154  mean-cand 1.767  A14 3.433  08:37
+it 4 ORCA: best 0.767  mean-cand 0.769  A14 2.093  08:37
+it 4 MRCBF: best 2.894  mean-cand 3.322  A14 5.453  08:37
+it 5 NOM: best 0.758  mean-cand 0.762  A14 1.721  08:47
+it 5 SPD: best 0.759  mean-cand 0.763  A14 1.886  08:47
+it 5 RARF: best 0.823  mean-cand 0.823  A14 2.363  08:47
+it 5 FF: best 0.760  mean-cand 0.760  A14 2.363  08:47
+it 5 HOCBF: best 0.761  mean-cand 0.763  A14 2.051  08:47
+it 5 RHOCBF: best 0.767  mean-cand 0.910  A14 3.893  08:47
+it 5 ORCA: best 0.766  mean-cand 0.768  A14 2.194  08:47
+it 5 MRCBF: best 5.059  mean-cand 5.059  A14 6.108  08:47
+{
+ "NOM": {
+  "select_score": 0.7592325333130615,
+  "select_scores_top3": [
+   0.7592325333130615,
+   0.7621591278374757,
+   0.7609325623788643
+  ],
+  "select_A14": 1.4917823031492932,
+  "search_score": 0.7576029044635725
+ },
+ "SPD": {
+  "select_score": 0.761596114715651,
+  "select_scores_top3": [
+   0.7626636224660728,
+   0.7616961369474402,
+   0.761596114715651
+  ],
+  "select_A14": 1.605430483243359,
+  "search_score": 0.7596655899836842
+ },
+ "RARF": {
+  "select_score": 0.9955424635564544,
+  "select_scores_top3": [
+   1.0024741666744201,
+   0.9955424635564544,
+   1.1281627902942908
+  ],
+  "select_A14": 2.2897380835298695,
+  "search_score": 0.877318174716731
+ },
+ "FF": {
+  "select_score": 0.7630366320018398,
+  "select_scores_top3": [
+   0.8310573682325559,
+   0.7630366320018398,
+   0.7653012366554034
+  ],
+  "select_A14": 2.2897380835298695,
+  "search_score": 0.7601086204482607
+ },
+ "HOCBF": {
+  "select_score": 0.7638860737976375,
+  "select_scores_top3": [
+   0.7647206763595218,
+   0.7638860737976375,
+   0.7644951070637916
+  ],
+  "select_A14": 1.8355251667456685,
+  "search_score": 0.7617523962418239
+ },
+ "RHOCBF": {
+  "select_score": 0.879374139334734,
+  "select_scores_top3": [
+   0.879374139334734,
+   1.0365454057802412,
+   1.1346672820042627
+  ],
+  "select_A14": 3.759323125051481,
+  "search_score": 0.7670015974135795
+ },
+ "ORCA": {
+  "select_score": 0.7779814480018903,
+  "select_scores_top3": [
+   0.81425709485903,
+   0.8113578130295633,
+   0.7779814480018903
+  ],
+  "select_A14": 1.9767033886076202,
+  "search_score": 0.7661599140889269
+ },
+ "MRCBF": {
+  "select_score": 3.850724893764271,
+  "select_scores_top3": [
+   4.393090281076345,
+   5.369073696578135,
+   3.850724893764271
+  ],
+  "select_A14": 5.131393763159054,
+  "search_score": 3.1437274644739577
+ }
+}

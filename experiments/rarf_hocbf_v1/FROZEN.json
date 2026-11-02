@@ -1,0 +1,78 @@
+{
+ "frozen_at": "2026-10-30 05:26:02 IST",
+ "selected": {
+  "HOCBF": "H3",
+  "RHOCBF": "R3",
+  "ORCA": "O3",
+  "MRCBF": "M1"
+ },
+ "selection": {
+  "HOCBF": {
+   "selected": "H3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "RHOCBF": {
+   "selected": "R3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "ORCA": {
+   "selected": "O3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "MRCBF": {
+   "selected": "M1",
+   "why": "none eligible: most completions, tie by min_sep"
+  }
+ },
+ "N": 12,
+ "sample_size_rule": {
+  "s_dev_RHOCBF": 0.32927387910847444,
+  "s_v3_RARF": 0.12660896186530704,
+  "s_star": 0.4558828409737815,
+  "n_rule": 80,
+  "N": 12,
+  "N_rule_original_clamp_12_15": 15,
+  "capped_by_A2": true
+ },
+ "dev_instrument_pass": {
+  "H1": "10/12",
+  "H2": "9/12",
+  "H3": "11/12",
+  "R1": "12/12",
+  "R2": "10/12",
+  "R3": "11/12"
+ },
+ "dev2_instrument_pass": {
+  "M1": "12/12",
+  "M2": "11/12",
+  "M3": "11/12",
+  "O1": "12/12",
+  "O2": "12/12",
+  "O3": "11/12"
+ },
+ "sha256": {
+  "experiments/rarf_hocbf_v1/PLAN.md": "dd94080416edfe433e33b46a650d6ebc40d92c3a064029988776002ce7d39149",
+  "experiments/rarf_hocbf_v1/design.py": "bab1acf7f36f6e897fc21ab7c1d695e18f7e89b7416df10530a66fb061003073",
+  "experiments/rarf_hocbf_v1/run.sh": "a4dc7b7664030efc809e411844492c67f9e9a700d630cb7653dcf10576c546ea",
+  "controllers/swarm/cs_agent_node_v3.py": "899b244429ddf806809849969cc381eb8a06771ab3ff8008bc5a02ab055192d9",
+  "controllers/swarm/cs_agent_node_v2.py": "2c49eb2cbce9ccd8049e3cbaab396030efe040309ae57caab92a0159db714a52",
+  "swarmsec/ral26_hocbf.py": "c61ef03da6accb562656181f64dc406257ad37be4514f5d3f8e10838714eb49b",
+  "swarmsec/safety.py": "7e0c731cfed4c6671bebbeecb5798a056b3e0945448871937f2b1c1420c3a53d",
+  "scripts/rarf_hocbf_v1/analyze.py": "beb9d4510fa271821d4bda7259ee38aef1807071cf42e100b83d9531071957ab",
+  "scripts/rarf_plant_time_v3/analyze.py": "155b4b350342f85ee57a1b6de321db3b163482d9bf2175e4f442957071653810",
+  "scripts/rarf_ablation/outcomes.py": "2b86e4e1ccec4e6197a5fdb49f7e5677cce97783dc1c68c2b08e23ed5129cdf3",
+  "scripts/coupled_safety/metrics.py": "b772feb4ecdd5990785f08cf1457d1c6d6007c665ea405e73c012d61228ae35d",
+  "experiments/rarf_plant_time_v3/design.py": "7481971f161db11fbb8355c0d3497c77236f1fbffbb89b46bf35e69c9dcf8207",
+  "experiments/rarf_ablation_v1/design.py": "e70485a4e53e2303c82c4fbb9ccebc00818f1bf19941ae523787362fdf3ab1ce",
+  "worlds/coupled_safety/yard_physics_rtf030.sdf": "443142e84369d15b0ecdc1668b7a21794a863fdcca833940d650f33b84a1b768",
+  "experiments/coupled_safety_v1/bounds_declared.json": "9772c661b8027a4937bcada9240c5043201665a8ae2ebf5a512e0e0ec0681a8f",
+  "controllers/swarm/cs_agent_node_v4.py": "b00499cd3930b890cc61607cee854b340b4261101c6902bb7eee22d4887ebf12",
+  "swarmsec/ral26_baselines2.py": "d85d6ae8822d18c15ea98b2af7933094a6aa0179ef8ee868856bd42388575012",
+  "experiments/rarf_hocbf_v1/freeze.py": "15ea81c964dcccaf97c1f917d0203d28e7cab6d739bad739633385ba61f8c375"
+ },
+ "bootstrap": {
+  "resamples": 10000,
+  "numpy_seed": 20261101
+ },
+ "workers": 3
+}

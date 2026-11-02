@@ -1,0 +1,3 @@
+{"wall": 1793392962.8045669, "mono": 12111.769513598, "sim": 24.172, "event": "start", "phases": ["HOLD", "HOLD", "HOLD", "HOLD", "HOLD", "HOLD"]}
+{"wall": 1793393060.3049777, "mono": 12209.269924962, "sim": 53.452, "event": "land", "phases": ["LAND", "LAND", "LAND", "LAND", "LAND", "LAND"]}
+{"wall": 1793393097.0546494, "mono": 12246.019596316, "sim": 64.46, "event": "done", "phases": ["DONE", "DONE", "DONE", "DONE", "DONE", "DONE"], "all_done": true}

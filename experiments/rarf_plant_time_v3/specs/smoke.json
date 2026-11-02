@@ -1,0 +1,306 @@
+{
+ "tag": "smoke",
+ "base": "config/swarm/coupled_safety_base.toml",
+ "results_root": "results/rarf_plant_time_v3",
+ "rtf_rerun_below": null,
+ "episodes": [
+  {
+   "name": "PTsm-COUPLED-RARF-g30-s17280",
+   "overrides": {
+    "experiment": {
+     "seed": 17280,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R_SH"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics_rtf050.sdf"
+    },
+    "ral26": {
+     "route": [
+      22.95235,
+      -7.01352
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 3,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 149569571,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 11.9909,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4,
+      "T_net_max_adverse": 0.27
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     },
+     "wall_timeout_s": 700.0
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.1543,
+       -0.151
+      ],
+      "1": [
+       -0.0472,
+       0.0478
+      ],
+      "2": [
+       -0.0012,
+       0.1405
+      ],
+      "3": [
+       -0.138,
+       0.1246
+      ],
+      "4": [
+       -0.1391,
+       0.0747
+      ],
+      "5": [
+       0.1129,
+       0.2196
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     },
+     "slot_shift": {
+      "id": 3,
+      "dx": -1.5,
+      "dy": -2.5981,
+      "toward": 0,
+      "shift_toward_m": 3.0
+     },
+     "clock": "plant",
+     "exec_chain": "v1",
+     "deadline_s": 0.025,
+     "rtf_nominal": 0.5
+    },
+    "controller": {
+     "script": "cs_agent_node_v2.py"
+    }
+   },
+   "meta": {
+    "set": "PT-sm",
+    "cell": "COUPLED",
+    "method": "RARF",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 17280,
+    "scenario": "RA-N6-17280",
+    "attacker_id": 3,
+    "violation": null,
+    "slot_shift": {
+     "id": 3,
+     "dx": -1.5,
+     "dy": -2.5981,
+     "toward": 0,
+     "shift_toward_m": 3.0
+    },
+    "variant": "D24R_SH",
+    "geometry": 3.0,
+    "speed_rule": null,
+    "stage": "sm",
+    "clock": "plant",
+    "exec_chain": "v1",
+    "rtf_target": 0.5,
+    "deadline_s": 0.025
+   }
+  },
+  {
+   "name": "PTsm-COUPLED-FF-g30-s17280",
+   "overrides": {
+    "experiment": {
+     "seed": 17280,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R_FF"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics_rtf050.sdf"
+    },
+    "ral26": {
+     "route": [
+      22.95235,
+      -7.01352
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 3,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 149569571,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 11.9909,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4,
+      "T_net_max_adverse": 0.27
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     },
+     "wall_timeout_s": 700.0
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.1543,
+       -0.151
+      ],
+      "1": [
+       -0.0472,
+       0.0478
+      ],
+      "2": [
+       -0.0012,
+       0.1405
+      ],
+      "3": [
+       -0.138,
+       0.1246
+      ],
+      "4": [
+       -0.1391,
+       0.0747
+      ],
+      "5": [
+       0.1129,
+       0.2196
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     },
+     "slot_shift": {
+      "id": 3,
+      "dx": -1.5,
+      "dy": -2.5981,
+      "toward": 0,
+      "shift_toward_m": 3.0
+     },
+     "clock": "plant",
+     "exec_chain": "v1",
+     "deadline_s": 0.025,
+     "rtf_nominal": 0.5
+    },
+    "controller": {
+     "script": "cs_agent_node_v2.py"
+    }
+   },
+   "meta": {
+    "set": "PT-sm",
+    "cell": "COUPLED",
+    "method": "FF",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 17280,
+    "scenario": "RA-N6-17280",
+    "attacker_id": 3,
+    "violation": null,
+    "slot_shift": {
+     "id": 3,
+     "dx": -1.5,
+     "dy": -2.5981,
+     "toward": 0,
+     "shift_toward_m": 3.0
+    },
+    "variant": "D24R_FF",
+    "geometry": 3.0,
+    "speed_rule": null,
+    "stage": "sm",
+    "clock": "plant",
+    "exec_chain": "v1",
+    "rtf_target": 0.5,
+    "deadline_s": 0.025
+   }
+  }
+ ]
+}

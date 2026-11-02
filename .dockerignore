@@ -1,0 +1,4 @@
+# The research image is built from remote sources; the Dockerfile has no COPY or ADD.
+# Keep recorded results and the Git object store out of the build context.
+*
+!Dockerfile

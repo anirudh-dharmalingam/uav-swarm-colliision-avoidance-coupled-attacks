@@ -1,0 +1,121 @@
+# RAL26 PX4 SITL + Gazebo X500 base configuration (one PX4 + one X500 per UAV, headless).
+# Every new RAL26 flight result uses this path; the Layer-1 double integrator is never the plant here.
+[experiment]
+id = "ral26"
+seed = 0
+duration_s = 45.0
+
+[controller]
+mode = "ral26"
+script = "uav_agent_node.py"
+
+[swarm]
+num_uavs = 4
+model = "gz_x500"
+autostart = 4001
+altitude_m = 5.0
+spawn_scale = 1.0
+
+[formation]
+type = "triangular_lattice"
+spacing_m = 6.0
+neighbor_radius_m = 12.0
+state_timeout_s = 0.5
+
+[safety]
+d_min = 1.5
+d_safe = 2.5
+
+[attack]
+id = "A0"
+
+[defense]
+id = "D26"
+
+[network]
+backend = "ral26_fanet"
+emulation = "ral26"
+
+[attacks]
+profile = "none"
+enabled = false
+
+[learning]
+mode = "classical"
+
+[px4_params]
+SDLOG_MODE = -1
+
+[ral26]
+rate_hz = 20.0
+cmd_mode = "acceleration"
+velocity_tau_s = 0.5
+max_speed_mps = 4.0
+route = [20.0, 0.0]
+v_mission = 1.0
+scenario = "bottleneck"
+squeeze = 0.35
+squeeze_t0 = 8.0
+squeeze_ramp_s = 8.0
+breathe_period_s = 10.0
+kp = 0.6
+kv = 1.2
+ka = 0.5
+kva = 1.0
+neighbor_radius_m = 12.0
+attacker_id = -1
+tx_rate_hz = 5.0
+tx_fast_hz = 20.0
+refresh_hold_s = 1.0
+static_age_s = 0.75
+nominal_age_s = 0.45
+gamma_warn = 0.5
+gamma_refresh = 0.75
+relax_gain = 1.0
+
+[ral26.bounds]
+U = 3.0
+W = 3.2          # HF1: truth xy residual train-max 2.49 / holdout-max 2.51 (jerk 8); declared 3.0 (+) |az|max 0.69
+A_any = 6.5      # >= honest U+W = 6.2 and the compromised UAV's U+eps = 5.5 command class (+ PX4 overshoot)
+beta_p = 1.25
+beta_v = 0.5
+T_net_max = 0.05
+ego_err_p = 0.6    # PX4 EKF vs Gazebo truth (time-aligned): max 0.36 (HF1), 0.51 (HF2 N=6)
+ego_err_v = 0.6    # max 0.57 m/s in N=6 formation flight (HF2); 1.09 in HF1 aggressive excitation
+d_safe = 1.5
+h = 0.4
+M = 8
+slew = 0.4       # HF1-identified jerk limit 8 m/s^3 x 0.05 s tick; hard QP constraint
+
+[ral26.energy]
+enabled = true
+E0_wh = 60.0
+reserve_wh = 0.5
+# return bound calibrated on 10 PX4 returns under attack + adverse FANET (pilot seeds 100):
+# observed T_return <= 40.1 s at d <= 9 m (v_eff 0.13..1.39 m/s), landing 10.8..11.2 s, P p99 303 W.
+# Envelope covering all: T_ret_upper = d / 0.25 + 37 s (25 s slowdown allowance + 12 s landing)
+P_return_upper_w = 320.0
+v_return = 0.25
+T_land_upper_s = 37.0
+v_return_cmd = 1.5
+inflation = 1.1
+model_valid = true
+
+[ral26.fanet]
+delay_s = 0.0
+jitter_s = 0.0
+loss = 0.0
+ge_p_gb = 0.0
+ge_p_bg = 0.3
+t_net_max = 0.05
+bucket_bytes_per_s = 2000.0
+bucket_burst_bytes = 576.0
+packet_bytes = 72
+
+[ral26.attack]
+epsilon = 0.0
+beta_attack = 0.0
+beta_v_attack = 0.0
+start_s = 10.0
+replay_s = 2.0
+trigger_radius_m = 9.0

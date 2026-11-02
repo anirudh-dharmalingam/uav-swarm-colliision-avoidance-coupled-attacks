@@ -1,0 +1,1198 @@
+{
+ "tag": "dev_smoke",
+ "base": "config/swarm/coupled_safety_base.toml",
+ "results_root": "results/coupled_safety_v1",
+ "rtf_rerun_below": 0.95,
+ "episodes": [
+  {
+   "name": "dev-S0-COUPLED-D24R-nominal-identity-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "identity"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "identity",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R-nominal-oracle-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "oracle"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "oracle",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R-nominal-sensor-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "sensor"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "sensor",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R-adverse-standard-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.1,
+      "jitter_s": 0.02,
+      "loss": 0.1,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.120001,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "adverse",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D26-nominal-standard-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D26"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D26",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R_NOSQ-nominal-standard-N6-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R_NOSQ"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R_NOSQ",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R-nominal-standard-N4-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 4
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.9723,
+      1.15265
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 1,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 189950951,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.2691,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       -0.1687,
+       -0.0627
+      ],
+      "1": [
+       -0.0104,
+       -0.1018
+      ],
+      "2": [
+       0.0721,
+       0.0365
+      ],
+      "3": [
+       0.0683,
+       -0.2359
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 4,
+    "seed": 12000,
+    "scenario": "dev-N4-12000",
+    "attacker_id": 1,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-S0-COUPLED-D24R-nominal-standard-N8-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 8
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.67399,
+      -3.94234
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 3,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1126240281,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 8.9911,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       -0.1361,
+       0.0764
+      ],
+      "1": [
+       -0.2475,
+       0.0231
+      ],
+      "2": [
+       0.2235,
+       0.1053
+      ],
+      "3": [
+       -0.1742,
+       -0.0188
+      ],
+      "4": [
+       -0.0962,
+       0.0307
+      ],
+      "5": [
+       0.1157,
+       -0.1146
+      ],
+      "6": [
+       0.155,
+       -0.0166
+      ],
+      "7": [
+       0.0697,
+       -0.2233
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 8,
+    "seed": 12000,
+    "scenario": "dev-N8-12000",
+    "attacker_id": 3,
+    "violation": null,
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-E5-report-S0-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 2.5,
+      "beta_attack": 3.0,
+      "beta_v_attack": 1.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": "report",
+    "slot_shift": null
+   }
+  },
+  {
+   "name": "dev-E5-accel-S0-s12000",
+   "overrides": {
+    "experiment": {
+     "seed": 12000,
+     "duration_s": 100.0
+    },
+    "swarm": {
+     "num_uavs": 6
+    },
+    "formation": {
+     "spacing_m": 6.0
+    },
+    "attack": {
+     "id": "A14"
+    },
+    "defense": {
+     "id": "D24R"
+    },
+    "wind": {
+     "speed": 0.0,
+     "sdf": "worlds/coupled_safety/yard_physics.sdf"
+    },
+    "ral26": {
+     "route": [
+      23.37098,
+      5.45868
+     ],
+     "v_mission": 1.0,
+     "attacker_id": 2,
+     "truth_hz": 50.0,
+     "sim_time_net": true,
+     "res_key": 1014810173,
+     "attack": {
+      "epsilon": 6.0,
+      "beta_attack": 1.25,
+      "beta_v_attack": 0.5,
+      "start_s": 10.8057,
+      "trigger_radius_m": 9.0,
+      "attacker_policy": "D0R",
+      "attacker_refuse_refresh": true
+     },
+     "bounds": {
+      "envelope": "sound_age",
+      "U": 3.0,
+      "W": 2.95,
+      "A_honest": 6.2,
+      "A_any": 8.8,
+      "beta_p": 1.25,
+      "beta_v": 0.5,
+      "T_net_max": 0.15,
+      "ego_err_p": 0.4,
+      "ego_err_v": 1.1,
+      "sender_err_p": 0.4,
+      "sender_err_v": 1.1,
+      "d_safe": 1.5,
+      "h": 0.4,
+      "M": 8,
+      "slew": 0.4
+     },
+     "fanet": {
+      "delay_s": 0.0,
+      "jitter_s": 0.0,
+      "loss": 0.0,
+      "ge_p_gb": 0.0,
+      "ge_p_bg": 0.3,
+      "t_net_max": 0.05,
+      "bucket_bytes_per_s": 2000.0,
+      "bucket_burst_bytes": 576.0,
+      "packet_bytes": 72
+     }
+    },
+    "cs": {
+     "spawn_jitter": {
+      "0": [
+       0.066,
+       0.206
+      ],
+      "1": [
+       0.0419,
+       -0.0911
+      ],
+      "2": [
+       0.2071,
+       0.0349
+      ],
+      "3": [
+       -0.0286,
+       0.2337
+      ],
+      "4": [
+       -0.0157,
+       -0.0817
+      ],
+      "5": [
+       0.1378,
+       -0.0526
+      ]
+     },
+     "info": {
+      "mode": "standard"
+     }
+    }
+   },
+   "meta": {
+    "set": "dev",
+    "cell": "COUPLED",
+    "method": "D24R",
+    "regime": "nominal",
+    "info": "standard",
+    "setting": "S0",
+    "N": 6,
+    "seed": 12000,
+    "scenario": "dev-N6-12000",
+    "attacker_id": 2,
+    "violation": "accel",
+    "slot_shift": null
+   }
+  }
+ ]
+}

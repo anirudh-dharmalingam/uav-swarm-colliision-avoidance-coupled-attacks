@@ -1,0 +1,32 @@
+start 2026-10-31T21:13:25+05:30
+experiments/le_x_published/PLAN.md: OK
+swarmsec/le_x/published.py: OK
+scripts/le_x/run_pb.py: OK
+scripts/le_x/analyze_pb.py: OK
+scripts/le_x/run_rz.py: OK
+scripts/le_x/cv_eval.py: OK
+scripts/le_x/adaptive_search.py: OK
+scripts/le_x/claim_diag.py: OK
+swarmsec/le_x/claimcheck.py: OK
+swarmsec/le_x/sim_x.py: OK
+swarmsec/le/protocol.py: OK
+swarmsec/le/adversary.py: OK
+swarmsec/le/mission_layer.py: OK
+swarmsec/le/rmetrics.py: OK
+swarmsec/le_x/adaptive.py: OK
+output/research/le_x_adaptive/theta_star.json: OK
+experiments/le_x_resilience/PLAN.md: OK
+scripts/le_x/run_rz.py: OK
+scripts/le_x/analyze_rz.py: OK
+swarmsec/le_x/claimcheck.py: OK
+swarmsec/le_x/sim_x.py: OK
+swarmsec/le/protocol.py: OK
+swarmsec/le/adversary.py: OK
+swarmsec/le/rmetrics.py: OK
+swarmsec/le/channel.py: OK
+scripts/le_x/adaptive_search.py: OK
+A-RZ calib rc=0 2026-11-01T00:07:30+05:30
+A-PB search rc=0 2026-11-01T01:09:52+05:30
+A-PB test rc=0 2026-11-01T01:58:43+05:30
+A-PB rz rc=0 2026-11-01T03:32:55+05:30
+CHAIN_DONE 2026-11-01T03:32:55+05:30

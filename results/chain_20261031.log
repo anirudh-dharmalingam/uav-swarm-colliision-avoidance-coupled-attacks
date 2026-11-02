@@ -1,0 +1,96 @@
+start 2026-10-30T23:32:49+05:30
+hocbf confirm done 2026-10-31T04:17:50+05:30
+/workspace/scripts/rarf_hocbf_v1/analyze.py:107: RuntimeWarning: Mean of empty slice
+  R["hocbf_audit_by_arm_geometry"] = {f"{m}|g{g:g}": {c: float(np.nanmean(s[c])) for c in hc_cols}
+Traceback (most recent call last):
+  File "/workspace/scripts/rarf_hocbf_v1/analyze_population.py", line 52, in <module>
+    main()
+  File "/workspace/scripts/rarf_hocbf_v1/analyze_population.py", line 48, in main
+    analyze.run("confirm")
+  File "/workspace/scripts/rarf_hocbf_v1/analyze.py", line 141, in run
+    R["binary"] = A.binaries(ok)
+                  ^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 179, in binaries
+    d[f"g{g:g}|{a}-{b}|risk_diff"] = cboot(Y, lambda M, a=a, b=b, k=k: float(np.mean(M[:, k, ai[a]] - M[:, k, ai[b]])), 0.95)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 132, in cboot
+    bs = np.array([fn(M[rng.integers(0, n, n)]) for _ in range(NB)])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 179, in <lambda>
+    d[f"g{g:g}|{a}-{b}|risk_diff"] = cboot(Y, lambda M, a=a, b=b, k=k: float(np.mean(M[:, k, ai[a]] - M[:, k, ai[b]])), 0.95)
+                                                                                                              ~~^^^
+KeyError: 'SPD'
+hocbf population analysis rc=1 2026-10-31T04:18:26+05:30
+Traceback (most recent call last):
+  File "/workspace/scripts/la_robust/analyze_screen.py", line 99, in <module>
+    main()
+  File "/workspace/scripts/la_robust/analyze_screen.py", line 94, in main
+    (out / "results.json").write_text(json.dumps(R, indent=1, default=str))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 377, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not tuple
+la_robust discovery analysis rc=1 2026-10-31T04:18:27+05:30
+rarf_l1_v3
+l1 replays done 2026-10-31T04:28:41+05:30
+{
+ "n_l1": 180,
+ "n_px4": 180,
+ "n_matched": 180,
+ "episode_corr_min_sep_ha": 0.9654885991594435,
+ "viol15_agreement": 0.9888888888888889
+}
+FF:NOM {'pooled': (0.84, 0.805, 'AGREE'), 'g0': (0.022, 0.006, 'NULL-AGREE'), 'g2': (1.015, 1.17, 'MAGNITUDE'), 'g3': (1.484, 1.239, 'MAGNITUDE')}
+FF:SPD {'pooled': (0.533, 0.581, 'AGREE'), 'g0': (0.019, 0.043, 'NULL-AGREE'), 'g2': (0.602, 0.683, 'AGREE'), 'g3': (0.978, 1.017, 'AGREE')}
+RARF:FF {'pooled': (-0.026, 0.001, 'NULL-AGREE'), 'g0': (-0.009, 0.0, 'NULL-AGREE'), 'g2': (-0.014, 0.0, 'NULL-AGREE'), 'g3': (-0.055, 0.002, 'NULL-AGREE')}
+RARF:NOM {'pooled': (0.814, 0.806, 'AGREE'), 'g0': (0.013, 0.006, 'NULL-AGREE'), 'g2': (1.001, 1.17, 'MAGNITUDE'), 'g3': (1.429, 1.242, 'MAGNITUDE')}
+RARF:SPD {'pooled': (0.507, 0.582, 'AGREE'), 'g0': (0.009, 0.043, 'NULL-AGREE'), 'g2': (0.588, 0.683, 'AGREE'), 'g3': (0.923, 1.02, 'AGREE')}
+{
+ "n_l1": 252,
+ "n_px4": 252,
+ "n_matched": 252,
+ "episode_corr_min_sep_ha": 0.7944515898602765,
+ "viol15_agreement": 0.9087301587301587
+}
+RARF:RHOCBF {'pooled': (-1.412, -1.454, 'AGREE'), 'g0': (-0.976, -1.015, 'AGREE'), 'g2': (-1.489, -1.527, 'AGREE'), 'g3': (-1.772, -1.818, 'AGREE')}
+RARF:HOCBF {'pooled': (0.366, 0.443, 'MAGNITUDE'), 'g0': (0.024, 0.014, 'DISAGREE'), 'g2': (0.528, 0.708, 'MAGNITUDE'), 'g3': (0.545, 0.608, 'AGREE')}
+FF:RHOCBF {'pooled': (-1.44, -1.454, 'AGREE'), 'g0': (-0.98, -1.015, 'AGREE'), 'g2': (-1.498, -1.527, 'AGREE'), 'g3': (-1.841, -1.818, 'AGREE')}
+RHOCBF:HOCBF {'pooled': (1.778, 1.897, 'MAGNITUDE'), 'g0': (1.0, 1.03, 'AGREE'), 'g2': (2.017, 2.235, 'MAGNITUDE'), 'g3': (2.317, 2.426, 'MAGNITUDE')}
+RARF:ORCA {'pooled': (0.184, 0.307, 'MAGNITUDE'), 'g0': (-0.274, -0.1, 'MAGNITUDE'), 'g2': (0.391, 0.582, 'MAGNITUDE'), 'g3': (0.435, 0.439, 'AGREE')}
+RARF:MRCBF {'pooled': (-3.416, -2.299, 'MAGNITUDE'), 'g0': (-3.656, -1.623, 'MAGNITUDE'), 'g2': (-3.717, -2.495, 'MAGNITUDE'), 'g3': (-2.876, -2.779, 'AGREE')}
+FF:MRCBF {'pooled': (-3.444, -2.299, 'MAGNITUDE'), 'g0': (-3.661, -1.623, 'MAGNITUDE'), 'g2': (-3.726, -2.495, 'MAGNITUDE'), 'g3': (-2.945, -2.779, 'AGREE')}
+RARF:NOM {'pooled': (0.844, 0.783, 'AGREE'), 'g0': (0.005, 0.014, 'DISAGREE'), 'g2': (0.955, 1.112, 'MAGNITUDE'), 'g3': (1.572, 1.222, 'MAGNITUDE')}
+HOCBF:NOM {'pooled': (0.478, 0.339, 'MAGNITUDE'), 'g0': (-0.019, 0.0, 'NULL-AGREE'), 'g2': (0.427, 0.404, 'AGREE'), 'g3': (1.027, 0.614, 'MAGNITUDE')}
+ORCA:NOM {'pooled': (0.66, 0.476, 'MAGNITUDE'), 'g0': (0.279, 0.114, 'MAGNITUDE'), 'g2': (0.563, 0.53, 'AGREE'), 'g3': (1.137, 0.783, 'MAGNITUDE')}
+MRCBF:NOM {'pooled': (4.26, 3.082, 'MAGNITUDE'), 'g0': (3.661, 1.637, 'MAGNITUDE'), 'g2': (4.672, 3.608, 'MAGNITUDE'), 'g3': (4.448, 4.001, 'AGREE')}
+fidelity done 2026-10-31T04:28:43+05:30
+experiments/le_x_collusion/PLAN.md: OK
+swarmsec/le_x/coalition.py: OK
+swarmsec/le_x/__init__.py: OK
+swarmsec/le_x/sim_x.py: OK
+scripts/le_x/build_sim_x.py: OK
+scripts/le_x/run_collusion.py: OK
+A-C1 discovery done 2026-10-31T07:19:38+05:30
+experiments/rarf_l1_breadth/PLAN.md: OK
+experiments/rarf_l1_breadth/design.py: OK
+experiments/rarf_l1_breadth/specs/budget.json: OK
+experiments/rarf_l1_breadth/specs/spectrum.json: OK
+swarmsec/rarf_l1/harness.py: OK
+swarmsec/rarf_l1/__init__.py: OK
+swarmsec/rarf_l1/plant_fit.json: OK
+scripts/rarf_l1/fidelity.py: OK
+scripts/rarf_l1/fit_plant.py: OK
+scripts/rarf_l1/run_l1.py: OK
+breadth spectrum done 2026-10-31T07:58:44+05:30
+breadth budget done 2026-10-31T08:52:29+05:30
+CHAIN_DONE 2026-10-31T08:52:29+05:30

@@ -1,0 +1,283 @@
+dev start Fri Oct 30 02:24:02 AM IST 2026 workers=3
+dev 72 -> /home/anirudh/Documents/Disaster-Swarm-dev/experiments/rarf_hocbf_v1/specs/dev.json
+{
+ "inventory": {
+  "planned": 72,
+  "analysable": 72,
+  "non_analysable": []
+ },
+ "instrument_pass": {
+  "H1": "10/12",
+  "H2": "9/12",
+  "H3": "11/12",
+  "R1": "12/12",
+  "R2": "10/12",
+  "R3": "11/12"
+ },
+ "candidates": {
+  "H1": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 8,
+   "mean_min_sep_ha": 1.6137402171191135,
+   "min_min_sep_ha": 0.5181602068858622,
+   "per_geometry_mean": {
+    "g0": 2.8136640143953002,
+    "g2": 1.2800784159953191,
+    "g3": 0.7474782209667207
+   },
+   "effort_rms": 0.2585675820738931,
+   "eligible": true
+  },
+  "H2": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 8,
+   "mean_min_sep_ha": 1.7116524357263714,
+   "min_min_sep_ha": 0.7035346473344428,
+   "per_geometry_mean": {
+    "g0": 2.815665068670197,
+    "g2": 1.2853418237160623,
+    "g3": 1.033950414792855
+   },
+   "effort_rms": 0.28981748453714534,
+   "eligible": true
+  },
+  "H3": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 3,
+   "mean_min_sep_ha": 1.9348970181835303,
+   "min_min_sep_ha": 1.0026410125264202,
+   "per_geometry_mean": {
+    "g0": 2.8140942180563666,
+    "g2": 1.6026099813130936,
+    "g3": 1.3879868551811305
+   },
+   "effort_rms": 0.3487120092366007,
+   "eligible": true
+  },
+  "R1": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 2,
+   "mean_min_sep_ha": 2.049061521251725,
+   "min_min_sep_ha": 1.1772208798691939,
+   "per_geometry_mean": {
+    "g0": 2.7758327430345657,
+    "g2": 1.742181555921336,
+    "g3": 1.629170264799273
+   },
+   "effort_rms": 0.3491184733281882,
+   "eligible": true
+  },
+  "R2": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 0,
+   "mean_min_sep_ha": 2.7819248457500083,
+   "min_min_sep_ha": 1.67818175416133,
+   "per_geometry_mean": {
+    "g0": 2.941826013484071,
+    "g2": 2.8331826464253824,
+    "g3": 2.5707658773405715
+   },
+   "effort_rms": 0.5409570340870969,
+   "eligible": true
+  },
+  "R3": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 0,
+   "mean_min_sep_ha": 3.4056316370859374,
+   "min_min_sep_ha": 2.5574162742893476,
+   "per_geometry_mean": {
+    "g0": 3.4747891673056275,
+    "g2": 3.360398641402692,
+    "g3": 3.381707102549494
+   },
+   "effort_rms": 1.108545357469988,
+   "eligible": true
+  }
+ },
+ "selection": {
+  "HOCBF": {
+   "selected": "H3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "RHOCBF": {
+   "selected": "R3",
+   "why": "eligible, largest mean min_sep_ha"
+  }
+ },
+ "sample_size_rule": {
+  "s_dev_RHOCBF": 0.32927387910847444,
+  "s_v3_RARF": 0.12660896186530704,
+  "s_star": 0.4558828409737815,
+  "n_rule": 80,
+  "N": 12,
+  "N_rule_original_clamp_12_15": 15,
+  "capped_by_A2": true
+ }
+}
+dev_DONE Fri Oct 30 03:53:21 AM IST 2026
+dev2 start Fri Oct 30 03:54:36 AM IST 2026 workers=3
+dev2 72 -> /home/anirudh/Documents/Disaster-Swarm-dev/experiments/rarf_hocbf_v1/specs/dev2.json
+/workspace/scripts/rarf_hocbf_v1/analyze.py:107: RuntimeWarning: Mean of empty slice
+  R["hocbf_audit_by_arm_geometry"] = {f"{m}|g{g:g}": {c: float(np.nanmean(s[c])) for c in hc_cols}
+{
+ "inventory": {
+  "planned": 72,
+  "analysable": 72,
+  "non_analysable": []
+ },
+ "instrument_pass": {
+  "M1": "12/12",
+  "M2": "11/12",
+  "M3": "11/12",
+  "O1": "12/12",
+  "O2": "12/12",
+  "O3": "11/12"
+ },
+ "selection": {
+  "ORCA": {
+   "selected": "O3",
+   "why": "eligible, largest mean min_sep_ha"
+  },
+  "MRCBF": {
+   "selected": "M1",
+   "why": "none eligible: most completions, tie by min_sep"
+  }
+ },
+ "candidates": {
+  "M1": {
+   "n": 12,
+   "route_complete": 8,
+   "crash": 2,
+   "viol15": 0,
+   "mean_min_sep_ha": 6.235920410153405,
+   "min_min_sep_ha": 4.597177938692389,
+   "per_geometry_mean": {
+    "g0": 6.2905638125081245,
+    "g2": 6.343313563632636,
+    "g3": 6.073883854319454
+   },
+   "effort_rms": 2.483071989491681,
+   "eligible": false
+  },
+  "M2": {
+   "n": 12,
+   "route_complete": 8,
+   "crash": 4,
+   "viol15": 0,
+   "mean_min_sep_ha": 5.843965382237997,
+   "min_min_sep_ha": 2.772238265373307,
+   "per_geometry_mean": {
+    "g0": 4.567398407379389,
+    "g2": 6.850169640416142,
+    "g3": 6.1143280989184605
+   },
+   "effort_rms": 2.4897566264255273,
+   "eligible": false
+  },
+  "M3": {
+   "n": 12,
+   "route_complete": 5,
+   "crash": 4,
+   "viol15": 1,
+   "mean_min_sep_ha": 5.544061679445586,
+   "min_min_sep_ha": 0.9169498350509695,
+   "per_geometry_mean": {
+    "g0": 5.792671627150037,
+    "g2": 6.0943478531609445,
+    "g3": 4.745165558025774
+   },
+   "effort_rms": 2.4694492638852927,
+   "eligible": false
+  },
+  "O1": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 8,
+   "mean_min_sep_ha": 1.6686086056771596,
+   "min_min_sep_ha": 0.5883689318786314,
+   "per_geometry_mean": {
+    "g0": 2.885445638103743,
+    "g2": 1.3425669279760708,
+    "g3": 0.7778132509516646
+   },
+   "effort_rms": 0.3393079668802143,
+   "eligible": true
+  },
+  "O2": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 6,
+   "mean_min_sep_ha": 1.8510930572044295,
+   "min_min_sep_ha": 0.9396414209686579,
+   "per_geometry_mean": {
+    "g0": 2.887959434544306,
+    "g2": 1.5642433499965889,
+    "g3": 1.101076387072394
+   },
+   "effort_rms": 0.41912007091605225,
+   "eligible": true
+  },
+  "O3": {
+   "n": 12,
+   "route_complete": 12,
+   "crash": 0,
+   "viol15": 3,
+   "mean_min_sep_ha": 2.1147346774374083,
+   "min_min_sep_ha": 1.3123627547290435,
+   "per_geometry_mean": {
+    "g0": 3.0885036306583515,
+    "g2": 1.7627271697072728,
+    "g3": 1.4929732319466016
+   },
+   "effort_rms": 0.483568264752465,
+   "eligible": true
+  }
+ }
+}
+dev2_DONE Fri Oct 30 05:25:16 AM IST 2026
+confirm start Fri Oct 30 09:05:24 AM IST 2026 workers=3
+verify: OK
+confirm 252 -> /home/anirudh/Documents/Disaster-Swarm-dev/experiments/rarf_hocbf_v1/specs/confirm.json
+confirm start Fri Oct 30 10:56:09 PM IST 2026 workers=3
+verify: MISMATCH ['experiments/rarf_hocbf_v1/PLAN.md']
+VERIFY FAILED
+confirm start Fri Oct 30 10:58:45 PM IST 2026 workers=3
+verify: OK
+confirm 252 -> /home/anirudh/Documents/Disaster-Swarm-dev/experiments/rarf_hocbf_v1/specs/confirm.json
+confirm start Fri Oct 30 11:18:13 PM IST 2026 workers=3
+verify: OK
+confirm 252 -> /home/anirudh/Documents/Disaster-Swarm-dev/experiments/rarf_hocbf_v1/specs/confirm.json
+verify: OK
+/workspace/scripts/rarf_hocbf_v1/analyze.py:107: RuntimeWarning: Mean of empty slice
+  R["hocbf_audit_by_arm_geometry"] = {f"{m}|g{g:g}": {c: float(np.nanmean(s[c])) for c in hc_cols}
+Traceback (most recent call last):
+  File "/workspace/scripts/rarf_hocbf_v1/analyze.py", line 151, in <module>
+    run(sys.argv[1])
+  File "/workspace/scripts/rarf_hocbf_v1/analyze.py", line 141, in run
+    R["binary"] = A.binaries(ok)
+                  ^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 179, in binaries
+    d[f"g{g:g}|{a}-{b}|risk_diff"] = cboot(Y, lambda M, a=a, b=b, k=k: float(np.mean(M[:, k, ai[a]] - M[:, k, ai[b]])), 0.95)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 132, in cboot
+    bs = np.array([fn(M[rng.integers(0, n, n)]) for _ in range(NB)])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/rarf_plant_time_v3/analyze.py", line 179, in <lambda>
+    d[f"g{g:g}|{a}-{b}|risk_diff"] = cboot(Y, lambda M, a=a, b=b, k=k: float(np.mean(M[:, k, ai[a]] - M[:, k, ai[b]])), 0.95)
+                                                                                                              ~~^^^
+KeyError: 'SPD'
+confirm_DONE Sat Oct 31 04:17:31 AM IST 2026
