@@ -1,4 +1,4 @@
-# Control Authority and Information Uncertainty in UAV Swarm Avoidance under Coupled Attacks
+# Collision Avoidance in UAV Swarms under Adverserial Pursuit and Uncertain Information
 
 Research code and experimental records for distributed UAV collision avoidance under coupled pursuit and state-report manipulation.
 
